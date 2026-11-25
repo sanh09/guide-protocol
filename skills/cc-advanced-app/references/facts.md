@@ -71,7 +71,7 @@
 - 예약 이름: 제3자 플러그인 이름은 `claude-`, `anthropic-`, `anthropics-`, `cc-plugin-`로 시작할 수 없고 `claude`, `anthropic`, `claude-code` 등도 쓸 수 없다(validate가 거부, 2026-11 확인).
 - 명령: `claude plugin validate <dir>`, `claude plugin marketplace add <dir|owner/repo>`, `claude plugin install <plugin>@<marketplace>`, `claude plugin list`, `claude plugin details <plugin>`, `claude plugin marketplace remove <name>`. 세션 안에서는 `/plugin ...`, 편집 후 `/reload-plugins`.
 - 배포: git 호스트에 push → 사용자는 `claude plugin marketplace add <owner>/<repo>`.
-- 실제 사례: `sanh09/code-guide-protocol`(마켓플레이스 `sanh09-skills`, 플러그인 `cc-basics`, `cc-intermediate`, `cc-advanced`).
+- 실제 사례: `sanh09/code-guide-protocol`(마켓플레이스 `sanh09-skills`, 플러그인 `codeguide-basics`, `codeguide-intermediate`, `codeguide-advanced`. 각 플러그인에 스킬 `cc-basics`, `cc-intermediate`, `cc-advanced`가 하나씩 들어 있다).
 
 ## 자동화
 출처: https://code.claude.com/docs/en/headless.md, https://code.claude.com/docs/en/best-practices.md, https://code.claude.com/docs/en/github-actions.md

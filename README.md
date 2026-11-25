@@ -3,20 +3,10 @@
 > **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 스킬 이름의 `-ko`는 처음 만든 이름을 그대로 둔 것입니다. All tutors reply in the learner's language.
 
 
-Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 쓰는 튜터 스킬 모음입니다. 두 종류가 있습니다.
+Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 Claude Code를 배우는 튜터 스킬 모음입니다.
 
-- **Claude 앱 사용법** (`ai-chat-guide-ko`): Claude 앱 자체를 잘 쓰는 법
-- **Claude Code 과정** (`cc-*-ko-app`): 터미널에서 쓰는 코딩 도구 Claude Code 배우기
-
-## Claude 앱 사용법 (`ai-chat-guide-ko`)
-
-Claude를 처음 쓰는 분부터 기능을 더 깊이 쓰고 싶은 분까지를 위한 과정입니다. 코딩 지식은 필요 없습니다. 실습은 Claude 앱의 새 채팅에서 바로 해 봅니다.
-
-- 기초: 첫 대화와 화면, 좋은 질문 쓰기, 파일·이미지 올리기, 웹 검색·Research·생각 설정
-- 활용: 프로젝트, 지침·메모리·이전 채팅 검색·시크릿 채팅, 아티팩트와 파일 만들기, 음성 모드와 모바일
-- 고급: 커넥터, 스킬, 여러 기능 조합하기, 안전하고 믿을 수 있게 쓰기
-
-파일: [`dist/ai-chat-guide-ko.zip`](dist/ai-chat-guide-ko.zip) · 시작하기: 새 채팅에서 "Claude 사용법 알려주세요", "프로젝트 기능이 뭐예요?"
+> **Claude 앱 사용법 튜터(`ai-chat-guide-ko`)는 별도 저장소로 옮겼습니다**: https://github.com/sanh09/app-guide-plugin
+> 이 저장소는 Claude 앱에서 배우는 **Claude Code 과정**만 관리합니다.
 
 ## Claude Code 과정 (기초 · 중급 · 고급)
 
@@ -33,7 +23,6 @@ Claude 앱의 채팅에서 Claude Code를 한 단계씩 배우는 과정입니�
 ## 추가하는 방법 (모든 스킬 공통)
 
 1. `dist/` 폴더에서 원하는 과정의 `.zip` 파일을 내려받으세요(파일을 연 뒤 "Download raw file"). 압축은 풀지 않아요.
-   - [`dist/ai-chat-guide-ko.zip`](dist/ai-chat-guide-ko.zip) (Claude 앱 사용법)
    - [`dist/cc-basics-ko-app.zip`](dist/cc-basics-ko-app.zip)
    - [`dist/cc-intermediate-ko-app.zip`](dist/cc-intermediate-ko-app.zip)
    - [`dist/cc-advanced-ko-app.zip`](dist/cc-advanced-ko-app.zip)
@@ -68,7 +57,6 @@ Claude 앱의 채팅에서 Claude Code를 한 단계씩 배우는 과정입니�
 
 ```
 skills/
-  ai-chat-guide-ko/             Claude 앱 사용법
   cc-basics-ko-app/
   cc-intermediate-ko-app/
   cc-advanced-ko-app/
@@ -83,11 +71,20 @@ dist/                            업로드용 .zip 파일
 
 ## 업데이트 내역
 
+### 2026-11-25: Claude 앱 사용법 튜터 분리
+- `ai-chat-guide-ko`를 이 저장소에서 빼고 [app-guide-plugin](https://github.com/sanh09/app-guide-plugin)에서만 관리합니다. 이미 받아 쓰는 스킬은 그대로 쓸 수 있고, 다음 업데이트부터는 app-guide-plugin의 `dist/ai-chat-guide-ko-skill.zip`을 받으세요.
+
+### 2026-11-25: 학습자 언어로 응답
+- 모든 튜터가 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 참고 파일은 한국어로 두고, 응답할 때 학습자의 언어로 옮깁니다.
+- 퀴즈는 옮겨도 보기의 뜻을 유지하고, 채점은 뜻으로 대조합니다.
+
+**업데이트 방법**: 사용자 정의(Customize) > 스킬(Skills)에서 기존 스킬을 지우고, `dist/`의 새 `.zip` 파일을 다시 올려 주세요.
+
 ### 2026-11-25: 퀴즈 정답 노출 수정
 - 퀴즈를 낼 때 정답이 문제·예시·힌트에 함께 보이던 문제를 고쳤습니다. 정답은 각 스킬의 `references/quiz-answers.md`로 분리되어 채점할 때만 쓰입니다.
 - 보기 순서가 매번 섞이고, 답 형식 예시는 `1-?, 2-?`처럼 자리 표시만 씁니다.
 - 퀴즈 카드에서는 정답을 정답 칸에만 넣고, 퀴즈 모드로 엽니다. 선택형 질문 버튼으로는 퀴즈를 내지 않습니다.
-- 대상: `cc-basics-ko-app`, `cc-intermediate-ko-app`, `cc-advanced-ko-app`, `ai-chat-guide-ko`
+- 대상: `cc-basics-ko-app`, `cc-intermediate-ko-app`, `cc-advanced-ko-app` (당시에는 `ai-chat-guide-ko`도 포함)
 
 **업데이트 방법**: 사용자 정의(Customize) > 스킬(Skills)에서 기존 스킬을 지우고, `dist/`의 새 `.zip` 파일을 다시 올려 주세요.
 

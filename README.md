@@ -1,6 +1,9 @@
-# guide-protocol: Claude 앱에서 배우는 한국어 학습 과정
+# guide-protocol: Claude 앱에서 배우는 학습 과정
 
-Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 쓰는 한국어 튜터 스킬 모음입니다. 두 종류가 있습니다.
+> **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 스킬 이름의 `-ko`는 처음 만든 이름을 그대로 둔 것입니다. All tutors reply in the learner's language.
+
+
+Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 쓰는 튜터 스킬 모음입니다. 두 종류가 있습니다.
 
 - **Claude 앱 사용법** (`ai-chat-guide-ko`): Claude 앱 자체를 잘 쓰는 법
 - **Claude Code 과정** (`cc-*-ko-app`): 터미널에서 쓰는 코딩 도구 Claude Code 배우기
@@ -17,7 +20,7 @@ Claude를 처음 쓰는 분부터 기능을 더 깊이 쓰고 싶은 분까지�
 
 ## Claude Code 과정 (기초 · 중급 · 고급)
 
-Claude 앱의 채팅에서 Claude Code를 한국어로, 한 단계씩 배우는 과정입니다. 각 과정은 튜토리얼, 실습 과제, 퀴즈로 구성되어 있습니다.
+Claude 앱의 채팅에서 Claude Code를 한 단계씩 배우는 과정입니다. 각 과정은 튜토리얼, 실습 과제, 퀴즈로 구성되어 있습니다.
 
 > Claude Code 터미널 안에서 쓰는 버전은 별도 저장소에 있어요: https://github.com/sanh09/code-guide-protocol
 

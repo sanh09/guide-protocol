@@ -76,7 +76,7 @@ claude
 - **L2-1.** 팀원 모두가 같은 MCP 서버 설정을 git으로 공유하려면? ① `--scope local` ② `--scope project` ③ `--scope user` ④ CLAUDE.md에 URL 적기
 - **L2-2.** `claude mcp add ... airtable -- npx -y airtable-mcp-server`에서 `--`의 의미는? ① 주석 ② Claude 옵션과 서버 실행 명령을 구분 ③ 백그라운드 실행 ④ 오류 무시
 - **L2-3.** MCP 서버가 `! Needs authentication`으로 보인다면? ① `/mcp`에서 서버를 골라 로그인 ② `/clear` ③ 재설치 ④ settings.json 삭제
-- **L2-4.** `.mcp.json`에 API 토큰을 넣는 가장 안전한 방법은? ① 토큰을 그대로 적고 커밋 ② `${MY_TOKEN}`처럼 환경 변수로 참조 ③ CLAUDE.md에 적기 ④ 파일 이름에 넣기
+- **L2-4.** `.mcp.json`에 API 토큰을 넣는 가장 안전한 방법은? ① 토큰을 그대로 적고 커밋 ② `${...}` 형식으로 환경 변수를 참조 ③ CLAUDE.md에 적기 ④ 파일 이름에 넣기
 
 ---
 

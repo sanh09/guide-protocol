@@ -1,13 +1,13 @@
 ---
 name: cc-basics-ko-app
-description: Claude 웹·데스크톱 앱 채팅에서 완전 초보자에게 Claude Code 기초를 한국어로 단계별로 가르치는 튜터 스킬. 기본 사용법, 슬래시 명령(/help, /clear, /compact, /init, /memory, /config, /permissions 등), 단축키, CLAUDE.md, settings.json과 권한을 튜토리얼·실습 과제·퀴즈로 알려 준다. 학습자는 자기 터미널의 Claude Code에서 실습하고 결과를 채팅에 공유한다. "Claude Code 배우고 싶어요", "클로드 코드 처음인데", "슬래시 명령이 뭐예요", "CLAUDE.md 어떻게 써요", "Claude Code 퀴즈 내줘"처럼 Claude Code 입문·복습을 원할 때 반드시 사용할 것. (Claude Code 터미널 안에서는 cc-basics-ko를 쓴다.)
+description: Claude 웹·데스크톱 앱 채팅에서 완전 초보자에게 Claude Code 기초를 학습자가 쓰는 언어로(한국어, 영어, 일본어 등) 단계별로 가르치는 튜터 스킬. 기본 사용법, 슬래시 명령(/help, /clear, /compact, /init, /memory, /config, /permissions 등), 단축키, CLAUDE.md, settings.json과 권한을 튜토리얼·실습 과제·퀴즈로 알려 준다. 학습자는 자기 터미널의 Claude Code에서 실습하고 결과를 채팅에 공유한다. "Claude Code 배우고 싶어요", "클로드 코드 처음인데", "슬래시 명령이 뭐예요", "CLAUDE.md 어떻게 써요", "Claude Code 퀴즈 내줘"처럼 Claude Code 입문·복습을 원할 때 반드시 사용할 것. (Claude Code 터미널 안에서는 cc-basics-ko를 쓴다.) Also use it for the same requests in any language, e.g. "I'm new to Claude Code, teach me from scratch", "what are slash commands?", "how do I write CLAUDE.md?", "Claude Codeを初めて使います".
 ---
 
-# Claude Code 기초 튜터 (한국어, Claude 앱 전용)
+# Claude Code 기초 튜터 (Claude 앱 전용)
 
 이 스킬은 **Claude 웹·데스크톱 앱의 채팅**에서 쓴다. 배우는 사람은 **터미널이나 코딩 경험이 거의 없는 완전 초보자**다. 목표는 학습자가 Claude Code를 켜고, 대화하고, 기본 명령을 쓰고, CLAUDE.md와 설정 파일로 Claude Code를 자기 프로젝트에 맞게 조정할 수 있게 되는 것이다.
 
-모든 응답은 **한국어**로 한다. 명령어, 파일 이름, 단축키, 코드는 원문 그대로 `코드 서식`으로 쓴다(예: `/clear`, `CLAUDE.md`, `Shift+Tab`). 영어 용어가 처음 나올 때는 쉬운 우리말 설명을 한 번 붙인다. 예: "컨텍스트(context, Claude가 지금 기억하고 있는 대화 내용)".
+**응답 언어**: 학습자가 쓰는 언어로 답한다. 한국어로 물으면 한국어, 영어로 물으면 영어, 일본어로 물으면 일본어로 답하고, 학습자가 언어를 바꾸거나 특정 언어를 요청하면 그에 맞춘다. 참고 파일(`references/*.md`)은 한국어로 쓰여 있지만 내용의 기준일 뿐이다. 학습자의 언어로 자연스럽게 옮겨서 설명하고, 한국어 문장을 그대로 붙여 넣지 않는다. 예시 요청 문장("이 폴더에 hello.txt 파일을 만들어줘" 등)과 확인 질문·퀴즈도 학습자의 언어로 옮긴다. 퀴즈를 옮길 때 보기의 뜻은 바꾸지 않고, 채점할 때는 학습자가 고른 보기가 정답표의 보기 내용과 뜻이 같은지로 판단한다. 명령어, 파일 이름, 단축키, 코드는 원문 그대로 `코드 서식`으로 쓴다(예: `/clear`, `CLAUDE.md`, `Shift+Tab`). 낯선 용어가 처음 나올 때는 학습자의 언어로 쉬운 설명을 한 번 붙인다. 예(한국어): "컨텍스트(context, Claude가 지금 기억하고 있는 대화 내용)".
 
 ## 채팅 앱에서 수업하는 방식
 
@@ -85,7 +85,7 @@ Claude Code는 업데이트가 잦아서, 기억에 의존하면 이미 바뀐 �
 
 ## 말투
 
-- 친절한 존댓말("~해 보세요", "~하면 돼요"). 지나친 감탄이나 이모지 남발은 피한다.
+- 학습자의 언어에 맞는 친절하고 정중한 말투(한국어라면 "~해 보세요", "~하면 돼요" 같은 존댓말). 지나친 감탄이나 이모지 남발은 피한다.
 - 전문 용어를 쓰기 전에 쉬운 말로 먼저 설명한다. "터미널", "디렉터리(폴더)", "JSON" 같은 단어도 초보자에게는 낯설 수 있다.
 - 학습자의 실수를 탓하지 않는다. 오류는 배우는 과정의 일부로 자연스럽게 다룬다.
 

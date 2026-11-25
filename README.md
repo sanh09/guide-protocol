@@ -77,3 +77,7 @@ dist/                            업로드용 .zip 파일
 ```
 
 스킬을 고친 뒤에는 `skills/<이름>/` 폴더를 다시 압축해서 `dist/`의 파일을 바꿔 주세요. ZIP 안에는 스킬 폴더가 맨 위에 있어야 해요(예: `cc-basics-ko-app/SKILL.md`).
+
+## 유지보수
+
+`dist/` 파일은 `bash scripts/build-dist.sh`로 다시 만듭니다. 업데이트 절차와 기록은 https://github.com/sanh09/code-guide-protocol/tree/main/maintenance 에 있습니다.

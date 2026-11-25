@@ -2,12 +2,12 @@
 
 [English](README.md) | **한국어**
 
-> **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 스킬 이름의 `-ko`는 처음 만든 이름을 그대로 둔 것입니다. All tutors reply in the learner's language.
+> **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. All tutors reply in the learner's language.
 
 
 Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 Claude Code를 배우는 튜터 스킬 모음입니다.
 
-> **Claude 앱 사용법 튜터(`ai-chat-guide-ko`)는 별도 저장소로 옮겼습니다**: https://github.com/sanh09/app-guide-plugin
+> **Claude 앱 사용법 튜터(`ai-chat-guide`)는 별도 저장소로 옮겼습니다**: https://github.com/sanh09/app-guide-plugin
 > 이 저장소는 Claude 앱에서 배우는 **Claude Code 과정**만 관리합니다.
 
 ## Claude Code 과정 (기초 · 중급 · 고급)
@@ -18,16 +18,16 @@ Claude 앱의 채팅에서 Claude Code를 한 단계씩 배우는 과정입니�
 
 | 과정 | 스킬 | 대상 | 다루는 내용 |
 |---|---|---|---|
-| 기초 | `cc-basics-ko-app` | 터미널·코딩이 처음인 사람 | 첫 대화, 입력 기호(`/` `!` `@`)와 단축키, 대화 관리, 권한과 모드, `CLAUDE.md`, `settings.json` |
-| 중급 | `cc-intermediate-ko-app` | 개발 경험자 또는 기초 수료자 | 좋은 요청 쓰기, plan 모드 워크플로, git·PR·체크포인트, 권한 규칙 심화, 나만의 슬래시 명령(스킬), 세션 관리, `claude -p` |
-| 고급 | `cc-advanced-ko-app` | 중급 수료자 또는 확인 퀴즈 통과자 | 확장 기능 고르기, MCP, 서브에이전트, 훅, 스킬·플러그인 제작과 배포, 자동화, worktree 병렬 작업 |
+| 기초 | `cc-basics-app` | 터미널·코딩이 처음인 사람 | 첫 대화, 입력 기호(`/` `!` `@`)와 단축키, 대화 관리, 권한과 모드, `CLAUDE.md`, `settings.json` |
+| 중급 | `cc-intermediate-app` | 개발 경험자 또는 기초 수료자 | 좋은 요청 쓰기, plan 모드 워크플로, git·PR·체크포인트, 권한 규칙 심화, 나만의 슬래시 명령(스킬), 세션 관리, `claude -p` |
+| 고급 | `cc-advanced-app` | 중급 수료자 또는 확인 퀴즈 통과자 | 확장 기능 고르기, MCP, 서브에이전트, 훅, 스킬·플러그인 제작과 배포, 자동화, worktree 병렬 작업 |
 
 ## 추가하는 방법 (모든 스킬 공통)
 
 1. `dist/` 폴더에서 원하는 과정의 `.zip` 파일을 내려받으세요(파일을 연 뒤 "Download raw file"). 압축은 풀지 않아요.
-   - [`dist/cc-basics-ko-app.zip`](dist/cc-basics-ko-app.zip)
-   - [`dist/cc-intermediate-ko-app.zip`](dist/cc-intermediate-ko-app.zip)
-   - [`dist/cc-advanced-ko-app.zip`](dist/cc-advanced-ko-app.zip)
+   - [`dist/cc-basics-app.zip`](dist/cc-basics-app.zip)
+   - [`dist/cc-intermediate-app.zip`](dist/cc-intermediate-app.zip)
+   - [`dist/cc-advanced-app.zip`](dist/cc-advanced-app.zip)
 2. Claude 웹 또는 데스크톱 앱에서 **사용자 정의(Customize) > 스킬(Skills)**로 가세요.
 3. "+" 버튼 → "+ 스킬 만들기" → "스킬 업로드"를 누르고 `.zip` 파일을 올리세요.
 4. 목록에 나타난 스킬이 켜져 있는지 확인하세요.
@@ -59,9 +59,9 @@ Claude 앱의 채팅에서 Claude Code를 한 단계씩 배우는 과정입니�
 
 ```
 skills/
-  cc-basics-ko-app/
-  cc-intermediate-ko-app/
-  cc-advanced-ko-app/
+  cc-basics-app/
+  cc-intermediate-app/
+  cc-advanced-app/
     SKILL.md                     튜터 규칙
     references/curriculum.md     레슨, 실습, 퀴즈 문제 은행
     references/quiz-answers.md   퀴즈 정답표 (채점할 때만 읽음)
@@ -70,9 +70,14 @@ skills/
 dist/                            업로드용 .zip 파일
 ```
 
-스킬을 고친 뒤에는 `skills/<이름>/` 폴더를 다시 압축해서 `dist/`의 파일을 바꿔 주세요. ZIP 안에는 스킬 폴더가 맨 위에 있어야 해요(예: `cc-basics-ko-app/SKILL.md`).
+스킬을 고친 뒤에는 `skills/<이름>/` 폴더를 다시 압축해서 `dist/`의 파일을 바꿔 주세요. ZIP 안에는 스킬 폴더가 맨 위에 있어야 해요(예: `cc-basics-app/SKILL.md`).
 
 ## 업데이트 내역
+
+### 2026-11-25: 이름에서 `-ko` 제거 (다시 올리기 필요)
+- 스킬 이름을 바꿨습니다: `cc-basics-ko-app` → `cc-basics-app`, `cc-intermediate-ko-app` → `cc-intermediate-app`, `cc-advanced-ko-app` → `cc-advanced-app`. 학습자가 쓰는 언어로 답하는 것은 그대로입니다.
+
+**예전 이름으로 추가했다면 바꿔 주세요**: 사용자 정의(Customize) > 스킬(Skills)에서 예전 `-ko-app` 스킬을 지우고, `dist/`의 새 `.zip` 파일을 올리세요.
 
 ### 2026-11-25: 영어 README와 라이선스
 - README 기본 언어를 영어로 바꾸고, 한국어는 이 파일(README.ko.md)에서 볼 수 있습니다. LICENSE 파일을 추가했습니다.

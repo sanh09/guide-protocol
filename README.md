@@ -2,11 +2,11 @@
 
 **English** | [한국어](README.ko.md)
 
-> **Reply language**: every tutor replies in the language the learner writes in (English, Korean, Japanese, and so on). The `-ko` suffix in the skill names is kept from the original names so that existing installs keep working.
+> **Reply language**: every tutor replies in the language the learner writes in (English, Korean, Japanese, and so on).
 
 Tutor skills for learning Claude Code **in a chat in the Claude web (claude.ai) or desktop app**.
 
-> **The Claude app tutor (`ai-chat-guide-ko`) has moved to its own repository**: https://github.com/sanh09/app-guide-plugin
+> **The Claude app tutor (`ai-chat-guide`) has moved to its own repository**: https://github.com/sanh09/app-guide-plugin
 > This repository only holds the **Claude Code courses** you take in the Claude app.
 
 ## Claude Code courses (Basics · Intermediate · Advanced)
@@ -17,16 +17,16 @@ Courses that teach Claude Code one step at a time in a Claude app chat. Each cou
 
 | Course | Skill | For | Covers |
 |---|---|---|---|
-| Basics | `cc-basics-ko-app` | People new to the terminal and coding | First conversation, input prefixes (`/` `!` `@`) and shortcuts, managing a conversation, permissions and modes, `CLAUDE.md`, `settings.json` |
-| Intermediate | `cc-intermediate-ko-app` | Developers, or people who finished Basics | Writing good requests, the plan-mode workflow, git, PRs and checkpoints, permission rules in depth, your own slash commands (skills), session management, `claude -p` |
-| Advanced | `cc-advanced-ko-app` | People who finished Intermediate or passed its check quiz | Choosing an extension type, MCP, subagents, hooks, building and publishing skills and plugins, automation, parallel work with worktrees |
+| Basics | `cc-basics-app` | People new to the terminal and coding | First conversation, input prefixes (`/` `!` `@`) and shortcuts, managing a conversation, permissions and modes, `CLAUDE.md`, `settings.json` |
+| Intermediate | `cc-intermediate-app` | Developers, or people who finished Basics | Writing good requests, the plan-mode workflow, git, PRs and checkpoints, permission rules in depth, your own slash commands (skills), session management, `claude -p` |
+| Advanced | `cc-advanced-app` | People who finished Intermediate or passed its check quiz | Choosing an extension type, MCP, subagents, hooks, building and publishing skills and plugins, automation, parallel work with worktrees |
 
 ## How to add a skill (same for every course)
 
 1. Download the `.zip` file of the course you want from the `dist/` folder (open the file, then "Download raw file"). Don't unzip it.
-   - [`dist/cc-basics-ko-app.zip`](dist/cc-basics-ko-app.zip)
-   - [`dist/cc-intermediate-ko-app.zip`](dist/cc-intermediate-ko-app.zip)
-   - [`dist/cc-advanced-ko-app.zip`](dist/cc-advanced-ko-app.zip)
+   - [`dist/cc-basics-app.zip`](dist/cc-basics-app.zip)
+   - [`dist/cc-intermediate-app.zip`](dist/cc-intermediate-app.zip)
+   - [`dist/cc-advanced-app.zip`](dist/cc-advanced-app.zip)
 2. In the Claude web or desktop app, go to **Customize > Skills**.
 3. Select "+" → "+ Create skill" → "Upload a skill", and upload the `.zip` file.
 4. Check that the skill is turned on in the list.
@@ -58,9 +58,9 @@ Start a new chat and say something like this to begin the right course:
 
 ```
 skills/
-  cc-basics-ko-app/
-  cc-intermediate-ko-app/
-  cc-advanced-ko-app/
+  cc-basics-app/
+  cc-intermediate-app/
+  cc-advanced-app/
     SKILL.md                     tutor rules
     references/curriculum.md     lessons, exercises, quiz bank
     references/quiz-answers.md   quiz answer key (read only when grading)
@@ -69,9 +69,14 @@ skills/
 dist/                            .zip files for upload
 ```
 
-After editing a skill, rebuild its archive in `dist/` with `bash scripts/build-dist.sh`. The skill folder must be at the top of the ZIP (for example `cc-basics-ko-app/SKILL.md`).
+After editing a skill, rebuild its archive in `dist/` with `bash scripts/build-dist.sh`. The skill folder must be at the top of the ZIP (for example `cc-basics-app/SKILL.md`).
 
 ## Release notes
+
+### 2026-11-25: `-ko` dropped from the names (action needed)
+- The skills are renamed: `cc-basics-ko-app` → `cc-basics-app`, `cc-intermediate-ko-app` → `cc-intermediate-app`, `cc-advanced-ko-app` → `cc-advanced-app`. The tutors still reply in the learner's language.
+
+**If you added the old names, replace them**: in Customize > Skills, delete the old `-ko-app` skills and upload the new `.zip` files from `dist/`.
 
 ### 2026-11-25: English README and license
 - The README is now in English by default, with the Korean version in [README.ko.md](README.ko.md). A LICENSE file was added.

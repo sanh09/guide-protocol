@@ -1,6 +1,23 @@
-# guide-protocol: Claude 앱에서 배우는 한국어 Claude Code 과정 (기초 · 중급 · 고급)
+# guide-protocol: Claude 앱에서 배우는 한국어 학습 과정
 
-Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 Claude Code를 한국어로, 한 단계씩 배우는 튜터 스킬 모음입니다. 각 과정은 튜토리얼, 실습 과제, 퀴즈로 구성되어 있습니다.
+Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 쓰는 한국어 튜터 스킬 모음입니다. 두 종류가 있습니다.
+
+- **Claude 앱 사용법** (`ai-chat-guide-ko`): Claude 앱 자체를 잘 쓰는 법
+- **Claude Code 과정** (`cc-*-ko-app`): 터미널에서 쓰는 코딩 도구 Claude Code 배우기
+
+## Claude 앱 사용법 (`ai-chat-guide-ko`)
+
+Claude를 처음 쓰는 분부터 기능을 더 깊이 쓰고 싶은 분까지를 위한 과정입니다. 코딩 지식은 필요 없습니다. 실습은 Claude 앱의 새 채팅에서 바로 해 봅니다.
+
+- 기초: 첫 대화와 화면, 좋은 질문 쓰기, 파일·이미지 올리기, 웹 검색·Research·생각 설정
+- 활용: 프로젝트, 지침·메모리·이전 채팅 검색·시크릿 채팅, 아티팩트와 파일 만들기, 음성 모드와 모바일
+- 고급: 커넥터, 스킬, 여러 기능 조합하기, 안전하고 믿을 수 있게 쓰기
+
+파일: [`dist/ai-chat-guide-ko.zip`](dist/ai-chat-guide-ko.zip) · 시작하기: 새 채팅에서 "Claude 사용법 알려주세요", "프로젝트 기능이 뭐예요?"
+
+## Claude Code 과정 (기초 · 중급 · 고급)
+
+Claude 앱의 채팅에서 Claude Code를 한국어로, 한 단계씩 배우는 과정입니다. 각 과정은 튜토리얼, 실습 과제, 퀴즈로 구성되어 있습니다.
 
 > Claude Code 터미널 안에서 쓰는 버전은 별도 저장소에 있어요: https://github.com/sanh09/code-guide-protocol
 
@@ -10,9 +27,10 @@ Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 Claude Code를 한�
 | 중급 | `cc-intermediate-ko-app` | 개발 경험자 또는 기초 수료자 | 좋은 요청 쓰기, plan 모드 워크플로, git·PR·체크포인트, 권한 규칙 심화, 나만의 슬래시 명령(스킬), 세션 관리, `claude -p` |
 | 고급 | `cc-advanced-ko-app` | 중급 수료자 또는 확인 퀴즈 통과자 | 확장 기능 고르기, MCP, 서브에이전트, 훅, 스킬·플러그인 제작과 배포, 자동화, worktree 병렬 작업 |
 
-## 추가하는 방법
+## 추가하는 방법 (모든 스킬 공통)
 
 1. `dist/` 폴더에서 원하는 과정의 `.zip` 파일을 내려받으세요(파일을 연 뒤 "Download raw file"). 압축은 풀지 않아요.
+   - [`dist/ai-chat-guide-ko.zip`](dist/ai-chat-guide-ko.zip) (Claude 앱 사용법)
    - [`dist/cc-basics-ko-app.zip`](dist/cc-basics-ko-app.zip)
    - [`dist/cc-intermediate-ko-app.zip`](dist/cc-intermediate-ko-app.zip)
    - [`dist/cc-advanced-ko-app.zip`](dist/cc-advanced-ko-app.zip)
@@ -22,7 +40,7 @@ Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 Claude Code를 한�
 
 스킬을 쓰려면 설정에서 코드 실행(파일 생성) 기능이 켜져 있어야 해요. Enterprise 플랜은 조직 관리자가 스킬 기능을 허용해야 해요.
 
-## 사용법
+## Claude Code 과정 사용법
 
 새 채팅에서 이렇게 말하면 알맞은 과정이 시작돼요.
 
@@ -47,6 +65,7 @@ Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 Claude Code를 한�
 
 ```
 skills/
+  ai-chat-guide-ko/             Claude 앱 사용법
   cc-basics-ko-app/
   cc-intermediate-ko-app/
   cc-advanced-ko-app/

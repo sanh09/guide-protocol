@@ -78,6 +78,18 @@ dist/                            업로드용 .zip 파일
 
 스킬을 고친 뒤에는 `skills/<이름>/` 폴더를 다시 압축해서 `dist/`의 파일을 바꿔 주세요. ZIP 안에는 스킬 폴더가 맨 위에 있어야 해요(예: `cc-basics-ko-app/SKILL.md`).
 
+## 업데이트 내역
+
+### 2026-11-25: 퀴즈 정답 노출 수정
+- 퀴즈를 낼 때 정답이 문제·예시·힌트에 함께 보이던 문제를 고쳤습니다. 정답은 각 스킬의 `references/quiz-answers.md`로 분리되어 채점할 때만 쓰입니다.
+- 보기 순서가 매번 섞이고, 답 형식 예시는 `1-?, 2-?`처럼 자리 표시만 씁니다.
+- 퀴즈 카드에서는 정답을 정답 칸에만 넣고, 퀴즈 모드로 엽니다. 선택형 질문 버튼으로는 퀴즈를 내지 않습니다.
+- 대상: `cc-basics-ko-app`, `cc-intermediate-ko-app`, `cc-advanced-ko-app`, `ai-chat-guide-ko`
+
+**업데이트 방법**: 사용자 정의(Customize) > 스킬(Skills)에서 기존 스킬을 지우고, `dist/`의 새 `.zip` 파일을 다시 올려 주세요.
+
+전체 변경 기록: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/CHANGELOG.md
+
 ## 유지보수
 
 `dist/` 파일은 `bash scripts/build-dist.sh`로 다시 만듭니다. 업데이트 절차와 기록은 https://github.com/sanh09/code-guide-protocol/tree/main/maintenance 에 있습니다.

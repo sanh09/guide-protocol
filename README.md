@@ -105,4 +105,4 @@ Rebuild the `dist/` files with `bash scripts/build-dist.sh`. The update procedur
 
 ## License
 
-See [`LICENSE`](LICENSE).
+MIT. See [`LICENSE`](LICENSE).

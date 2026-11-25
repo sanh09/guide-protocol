@@ -106,4 +106,4 @@ dist/                            업로드용 .zip 파일
 
 ## 라이선스
 
-[`LICENSE`](LICENSE)를 보세요.
+MIT 라이선스입니다. [`LICENSE`](LICENSE)를 보세요.

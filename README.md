@@ -90,6 +90,9 @@ dist/                            업로드용 .zip 파일
 
 전체 변경 기록: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/CHANGELOG.md
 
+## 변경 방법
+
+이 저장소의 변경은 `main`에 직접 push하지 않고 PR(Pull Request)로 진행합니다. 브랜치를 만들어 수정하고, 검증(`claude plugin validate .` 등)이 통과하면 PR을 merge합니다. 자동 업데이트도 같은 방식으로 PR을 만들고 merge합니다. 자세한 절차: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/MAINTENANCE.md
 ## 유지보수
 
 `dist/` 파일은 `bash scripts/build-dist.sh`로 다시 만듭니다. 업데이트 절차와 기록은 https://github.com/sanh09/code-guide-protocol/tree/main/maintenance 에 있습니다.

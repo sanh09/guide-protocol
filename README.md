@@ -1,98 +1,108 @@
-# guide-protocol: Claude 앱에서 배우는 학습 과정
+# guide-protocol: learn Claude Code in the Claude app
 
-> **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 스킬 이름의 `-ko`는 처음 만든 이름을 그대로 둔 것입니다. All tutors reply in the learner's language.
+**English** | [한국어](README.ko.md)
 
+> **Reply language**: every tutor replies in the language the learner writes in (English, Korean, Japanese, and so on). The `-ko` suffix in the skill names is kept from the original names so that existing installs keep working.
 
-Claude **웹(claude.ai)·데스크톱 앱의 채팅**에서 Claude Code를 배우는 튜터 스킬 모음입니다.
+Tutor skills for learning Claude Code **in a chat in the Claude web (claude.ai) or desktop app**.
 
-> **Claude 앱 사용법 튜터(`ai-chat-guide-ko`)는 별도 저장소로 옮겼습니다**: https://github.com/sanh09/app-guide-plugin
-> 이 저장소는 Claude 앱에서 배우는 **Claude Code 과정**만 관리합니다.
+> **The Claude app tutor (`ai-chat-guide-ko`) has moved to its own repository**: https://github.com/sanh09/app-guide-plugin
+> This repository only holds the **Claude Code courses** you take in the Claude app.
 
-## Claude Code 과정 (기초 · 중급 · 고급)
+## Claude Code courses (Basics · Intermediate · Advanced)
 
-Claude 앱의 채팅에서 Claude Code를 한 단계씩 배우는 과정입니다. 각 과정은 튜토리얼, 실습 과제, 퀴즈로 구성되어 있습니다.
+Courses that teach Claude Code one step at a time in a Claude app chat. Each course is made of tutorials, hands-on exercises, and quizzes.
 
-> Claude Code 터미널 안에서 쓰는 버전은 별도 저장소에 있어요: https://github.com/sanh09/code-guide-protocol
+> The version you use inside the Claude Code terminal is in a separate repository: https://github.com/sanh09/code-guide-protocol
 
-| 과정 | 스킬 | 대상 | 다루는 내용 |
+| Course | Skill | For | Covers |
 |---|---|---|---|
-| 기초 | `cc-basics-ko-app` | 터미널·코딩이 처음인 사람 | 첫 대화, 입력 기호(`/` `!` `@`)와 단축키, 대화 관리, 권한과 모드, `CLAUDE.md`, `settings.json` |
-| 중급 | `cc-intermediate-ko-app` | 개발 경험자 또는 기초 수료자 | 좋은 요청 쓰기, plan 모드 워크플로, git·PR·체크포인트, 권한 규칙 심화, 나만의 슬래시 명령(스킬), 세션 관리, `claude -p` |
-| 고급 | `cc-advanced-ko-app` | 중급 수료자 또는 확인 퀴즈 통과자 | 확장 기능 고르기, MCP, 서브에이전트, 훅, 스킬·플러그인 제작과 배포, 자동화, worktree 병렬 작업 |
+| Basics | `cc-basics-ko-app` | People new to the terminal and coding | First conversation, input prefixes (`/` `!` `@`) and shortcuts, managing a conversation, permissions and modes, `CLAUDE.md`, `settings.json` |
+| Intermediate | `cc-intermediate-ko-app` | Developers, or people who finished Basics | Writing good requests, the plan-mode workflow, git, PRs and checkpoints, permission rules in depth, your own slash commands (skills), session management, `claude -p` |
+| Advanced | `cc-advanced-ko-app` | People who finished Intermediate or passed its check quiz | Choosing an extension type, MCP, subagents, hooks, building and publishing skills and plugins, automation, parallel work with worktrees |
 
-## 추가하는 방법 (모든 스킬 공통)
+## How to add a skill (same for every course)
 
-1. `dist/` 폴더에서 원하는 과정의 `.zip` 파일을 내려받으세요(파일을 연 뒤 "Download raw file"). 압축은 풀지 않아요.
+1. Download the `.zip` file of the course you want from the `dist/` folder (open the file, then "Download raw file"). Don't unzip it.
    - [`dist/cc-basics-ko-app.zip`](dist/cc-basics-ko-app.zip)
    - [`dist/cc-intermediate-ko-app.zip`](dist/cc-intermediate-ko-app.zip)
    - [`dist/cc-advanced-ko-app.zip`](dist/cc-advanced-ko-app.zip)
-2. Claude 웹 또는 데스크톱 앱에서 **사용자 정의(Customize) > 스킬(Skills)**로 가세요.
-3. "+" 버튼 → "+ 스킬 만들기" → "스킬 업로드"를 누르고 `.zip` 파일을 올리세요.
-4. 목록에 나타난 스킬이 켜져 있는지 확인하세요.
+2. In the Claude web or desktop app, go to **Customize > Skills**.
+3. Select "+" → "+ Create skill" → "Upload a skill", and upload the `.zip` file.
+4. Check that the skill is turned on in the list.
 
-스킬을 쓰려면 설정에서 코드 실행(파일 생성) 기능이 켜져 있어야 해요. Enterprise 플랜은 조직 관리자가 스킬 기능을 허용해야 해요.
+Skills need code execution (file creation) turned on in settings. On the Enterprise plan, an organization admin has to allow skills.
 
-## Claude Code 과정 사용법
+## Using the courses
 
-새 채팅에서 이렇게 말하면 알맞은 과정이 시작돼요.
+Start a new chat and say something like this to begin the right course:
 
-- 기초: "Claude Code 처음부터 알려주세요", "CLAUDE.md 퀴즈 내주세요"
-- 중급: "Claude Code 중급 시작할래요", "plan 모드 잘 쓰는 법"
-- 고급: "MCP 서버 연결하는 법", "훅 설정하고 싶어요"
+- Basics: "Teach me Claude Code from the start", "Give me a CLAUDE.md quiz"
+- Intermediate: "Start the Claude Code intermediate course", "How do I use plan mode well?"
+- Advanced: "How do I connect an MCP server?", "I want to set up hooks"
 
-### 수업 방식
+### How the lessons work
 
-- 채팅의 Claude는 내 컴퓨터를 볼 수 없어요. 그래서 **채팅에서 배우고 → 내 터미널의 Claude Code에서 해 보고 → 결과(출력이나 스크린샷)를 채팅에 올리는** 방식으로 진행해요.
-- 채팅창에 명령어를 입력하면 실행되지 않아요. 명령어는 터미널에 입력하세요.
-- 실습하려면 내 컴퓨터에 Claude Code가 있어야 해요. 없다면 공식 안내를 보세요: https://code.claude.com/docs/en/quickstart
-- 설정 파일이나 로그를 채팅에 올릴 때는 API 키·토큰 같은 비밀 값을 지우고 올리세요.
+- Claude in the chat can't see your computer. So you **learn in the chat → try it in Claude Code in your own terminal → post the result (output or a screenshot) back in the chat**.
+- Commands typed into the chat box don't run. Type them in your terminal.
+- To do the exercises, you need Claude Code on your computer. If you don't have it, see the official guide: https://code.claude.com/docs/en/quickstart
+- Before posting a settings file or log in the chat, remove secrets such as API keys and tokens.
 
-### 수준 확인 (중급·고급)
+### Level checks (Intermediate and Advanced)
 
-- **중급**: 시작할 때 개발 경험을 물어요. 개발 경험이 있으면 바로 시작해요. 없으면 기초를 마쳤는지 묻고, 마쳤다면 확인 퀴즈(5문제 중 4문제 이상)를 봐요. 마치지 않았다면 기초 과정으로 안내해요.
-- **고급**: 중급 확인 퀴즈를 통과해야 시작해요. 개발 경험이 없으면 기초와 중급을 먼저 마쳐야 해요.
-- 채팅 앱에는 수료 기록이 남지 않아서, 새 채팅에서 다음 과정을 시작하면 확인 퀴즈를 봐요. 같은 채팅에서 이어서 하면 퀴즈 없이 넘어가요.
+- **Intermediate**: asks about your development experience first. With experience, you start right away. Without it, the tutor asks whether you finished Basics; if you did, you take a check quiz (4 of 5 correct). If you didn't, it sends you to Basics.
+- **Advanced**: you need to pass the Intermediate check quiz. Without development experience, finish Basics and Intermediate first.
+- The chat app keeps no completion record, so starting the next course in a new chat means a check quiz. Continuing in the same chat skips it.
 
-## 구조
+## Structure
 
 ```
 skills/
   cc-basics-ko-app/
   cc-intermediate-ko-app/
   cc-advanced-ko-app/
-    SKILL.md                     튜터 규칙
-    references/curriculum.md     레슨, 실습, 퀴즈 문제 은행
-    references/facts.md          공식 문서로 확인한 사실 정리 (2026-11 기준)
-    references/gating.md         수준 확인 절차 (중급·고급)
-dist/                            업로드용 .zip 파일
+    SKILL.md                     tutor rules
+    references/curriculum.md     lessons, exercises, quiz bank
+    references/quiz-answers.md   quiz answer key (read only when grading)
+    references/facts.md          facts checked against the official docs (as of 2026-11)
+    references/gating.md         level check (Intermediate, Advanced)
+dist/                            .zip files for upload
 ```
 
-스킬을 고친 뒤에는 `skills/<이름>/` 폴더를 다시 압축해서 `dist/`의 파일을 바꿔 주세요. ZIP 안에는 스킬 폴더가 맨 위에 있어야 해요(예: `cc-basics-ko-app/SKILL.md`).
+After editing a skill, rebuild its archive in `dist/` with `bash scripts/build-dist.sh`. The skill folder must be at the top of the ZIP (for example `cc-basics-ko-app/SKILL.md`).
 
-## 업데이트 내역
+## Release notes
 
-### 2026-11-25: Claude 앱 사용법 튜터 분리
-- `ai-chat-guide-ko`를 이 저장소에서 빼고 [app-guide-plugin](https://github.com/sanh09/app-guide-plugin)에서만 관리합니다. 이미 받아 쓰는 스킬은 그대로 쓸 수 있고, 다음 업데이트부터는 app-guide-plugin의 `dist/ai-chat-guide-ko-skill.zip`을 받으세요.
+### 2026-11-25: English README and license
+- The README is now in English by default, with the Korean version in [README.ko.md](README.ko.md). A LICENSE file was added.
 
-### 2026-11-25: 학습자 언어로 응답
-- 모든 튜터가 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 참고 파일은 한국어로 두고, 응답할 때 학습자의 언어로 옮깁니다.
-- 퀴즈는 옮겨도 보기의 뜻을 유지하고, 채점은 뜻으로 대조합니다.
+### 2026-11-25: Claude app tutor moved out
+- `ai-chat-guide-ko` was removed from this repository and is now kept only in [app-guide-plugin](https://github.com/sanh09/app-guide-plugin). A copy you already added keeps working; for future updates, download `dist/ai-chat-guide-ko-skill.zip` from app-guide-plugin.
 
-**업데이트 방법**: 사용자 정의(Customize) > 스킬(Skills)에서 기존 스킬을 지우고, `dist/`의 새 `.zip` 파일을 다시 올려 주세요.
+### 2026-11-25: Replies in the learner's language
+- Every tutor replies in the language the learner writes in (English, Korean, Japanese, and so on). The reference files stay in Korean and are translated when the tutor replies.
+- Translated quizzes keep the meaning of each option, and grading compares meanings.
 
-### 2026-11-25: 퀴즈 정답 노출 수정
-- 퀴즈를 낼 때 정답이 문제·예시·힌트에 함께 보이던 문제를 고쳤습니다. 정답은 각 스킬의 `references/quiz-answers.md`로 분리되어 채점할 때만 쓰입니다.
-- 보기 순서가 매번 섞이고, 답 형식 예시는 `1-?, 2-?`처럼 자리 표시만 씁니다.
-- 퀴즈 카드에서는 정답을 정답 칸에만 넣고, 퀴즈 모드로 엽니다. 선택형 질문 버튼으로는 퀴즈를 내지 않습니다.
-- 대상: `cc-basics-ko-app`, `cc-intermediate-ko-app`, `cc-advanced-ko-app` (당시에는 `ai-chat-guide-ko`도 포함)
+**How to update**: in Customize > Skills, delete the old skill and upload the new `.zip` file from `dist/`.
 
-**업데이트 방법**: 사용자 정의(Customize) > 스킬(Skills)에서 기존 스킬을 지우고, `dist/`의 새 `.zip` 파일을 다시 올려 주세요.
+### 2026-11-25: Quiz answers no longer leak
+- Fixed quiz answers showing up in the question, examples, or hints. Answers now live in each skill's `references/quiz-answers.md` and are read only when grading.
+- Options are shuffled every time, and answer-format examples use placeholders only, such as `1-?, 2-?`.
+- Quiz cards put the answer only in the answer field and open in quiz mode. Quizzes are never asked with multiple-choice question buttons.
+- Applies to `cc-basics-ko-app`, `cc-intermediate-ko-app`, `cc-advanced-ko-app` (and, at that time, `ai-chat-guide-ko`)
 
-전체 변경 기록: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/CHANGELOG.md
+**How to update**: in Customize > Skills, delete the old skill and upload the new `.zip` file from `dist/`.
 
-## 변경 방법
+Full change log: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/CHANGELOG.md
 
-이 저장소의 변경은 `main`에 직접 push하지 않고 PR(Pull Request)로 진행합니다. 브랜치를 만들어 수정하고, 검증(`claude plugin validate .` 등)이 통과하면 PR을 merge합니다. 자동 업데이트도 같은 방식으로 PR을 만들고 merge합니다. 자세한 절차: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/MAINTENANCE.md
-## 유지보수
+## Contributing
 
-`dist/` 파일은 `bash scripts/build-dist.sh`로 다시 만듭니다. 업데이트 절차와 기록은 https://github.com/sanh09/code-guide-protocol/tree/main/maintenance 에 있습니다.
+Changes go through pull requests, not direct pushes to `main`. Make a branch, edit, and merge the PR once the checks pass. The automatic updates follow the same flow. Details: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/MAINTENANCE.md
+
+## Maintenance
+
+Rebuild the `dist/` files with `bash scripts/build-dist.sh`. The update procedure and records are in https://github.com/sanh09/code-guide-protocol/tree/main/maintenance
+
+## License
+
+MIT. See [`LICENSE`](LICENSE).

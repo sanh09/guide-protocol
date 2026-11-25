@@ -12,7 +12,7 @@
 ## MCP
 출처: https://code.claude.com/docs/en/mcp.md
 - 원격 HTTP(권장): `claude mcp add --transport http <name> <url>`, 예 `claude mcp add --transport http notion https://mcp.notion.com/mcp`
-- 헤더: `--header "Authorization: Bearer your-token"`
+- 헤더: `--header "Authorization: Bearer YOUR_API_KEY"`
 - 로컬 stdio: `claude mcp add [options] <name> -- <command> [args...]`, 예 `claude mcp add --env AIRTABLE_API_KEY=YOUR_KEY --transport stdio airtable -- npx -y airtable-mcp-server`. `--`는 Claude 옵션과 서버 실행 명령을 구분한다.
 - SSE는 사용 중단(deprecated).
 - 플래그: `-s/--scope`, `-e/--env`, `-t/--transport`, `-H/--header`

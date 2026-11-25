@@ -1,5 +1,7 @@
 # 커리큘럼: Claude Code 기초 (완전 초보자용)
 
+> 퀴즈 문제 은행의 정답은 이 파일에 없다. 정답은 `quiz-answers.md`에 문제 번호(예: L3-2)별로 있고, 학습자가 답한 뒤 채점할 때만 읽는다. 문제를 낼 때는 보기 순서를 섞는다.
+
 수업할 레슨 부분만 읽는다. 각 레슨은 여러 번의 짧은 응답으로 나눠 진행한다(한 응답 = 개념 1~3개 + 실습 1개). 사실 확인은 `facts.md`.
 
 목차
@@ -38,9 +40,9 @@
 확인 포인트: 화면 아래 상태 표시줄에 어떤 모드가 보이는지, 허락을 구하는 창이 떴는지 물어본다(레슨 4 복선).
 
 퀴즈 문제 은행
-- Q. Claude Code가 내 파일을 읽고 고칠 수 있는 범위를 정하는 가장 기본적인 요소는? ① 인터넷 속도 ② Claude Code를 켠 폴더 ③ 모니터 크기 ④ 키보드 언어 → 정답 ②
-- Q. Claude Code에게 요청할 때 올바른 방법은? ① 정해진 영어 명령어만 써야 한다 ② 평소 말하듯 한국어로 요청해도 된다 ③ 반드시 코드로만 말해야 한다 ④ 질문은 한 단어만 → 정답 ②
-- Q. Claude Code를 종료하는 명령은? ① `/clear` ② `/exit` ③ `/init` ④ `/model` → 정답 ②
+- **L1-1.** Claude Code가 내 파일을 읽고 고칠 수 있는 범위를 정하는 가장 기본적인 요소는? ① 인터넷 속도 ② Claude Code를 켠 폴더 ③ 모니터 크기 ④ 키보드 언어
+- **L1-2.** Claude Code에게 요청할 때 올바른 방법은? ① 정해진 영어 명령어만 써야 한다 ② 평소 말하듯 한국어로 요청해도 된다 ③ 반드시 코드로만 말해야 한다 ④ 질문은 한 단어만
+- **L1-3.** Claude Code를 종료하는 명령은? ① `/clear` ② `/exit` ③ `/init` ④ `/model`
 
 ---
 
@@ -64,10 +66,10 @@
 4. 긴 작업을 시킨 뒤("1부터 100까지 숫자마다 설명을 써줘") 바로 `Esc`로 멈춰 보기.
 
 퀴즈 문제 은행
-- Q. Claude에게 묻지 않고 `ls` 명령을 직접 실행하려면? ① `/ls` ② `! ls` ③ `@ls` ④ `# ls` → 정답 ②
-- Q. 특정 파일을 콕 집어 Claude에게 알려주는 기호는? ① `@` ② `!` ③ `/` ④ `?` → 정답 ①
-- Q. Claude가 잘못된 방향으로 작업하고 있다. 가장 먼저 누를 키는? ① `Shift+Tab` ② `Esc` ③ `Ctrl+L` ④ `↑` → 정답 ②
-- Q. 방금 보낸 긴 질문을 조금만 고쳐 다시 보내고 싶다면? ① 처음부터 다시 타이핑 ② `↑`로 불러와 수정 ③ `/clear` ④ 종료 후 재시작 → 정답 ②
+- **L2-1.** Claude에게 묻지 않고 `ls` 명령을 직접 실행하려면? ① `/ls` ② `! ls` ③ `@ls` ④ `# ls`
+- **L2-2.** 특정 파일을 콕 집어 Claude에게 알려주는 기호는? ① `@` ② `!` ③ `/` ④ `?`
+- **L2-3.** Claude가 잘못된 방향으로 작업하고 있다. 가장 먼저 누를 키는? ① `Shift+Tab` ② `Esc` ③ `Ctrl+L` ④ `↑`
+- **L2-4.** 방금 보낸 긴 질문을 조금만 고쳐 다시 보내고 싶다면? ① 처음부터 다시 타이핑 ② `↑`로 불러와 수정 ③ `/clear` ④ 종료 후 재시작
 
 ---
 
@@ -99,10 +101,10 @@
 4. `/resume`으로 이전 대화 다시 열기.
 
 퀴즈 문제 은행
-- Q. 같은 기능을 계속 만드는 중인데 대화가 너무 길어졌다. 흐름은 유지하고 싶다면? ① `/clear` ② `/compact` ③ `/exit` ④ `/init` → 정답 ②
-- Q. 버그 수정을 끝내고 전혀 다른 문서 작업을 시작한다면? ① `/clear` ② `/compact` ③ `/rewind` ④ `/memory` → 정답 ①
-- Q. Claude가 파일을 잘못 고쳤다. 고치기 전 상태로 돌아가려면? ① `/clear` ② `/rewind` ③ `/context` ④ `/status` → 정답 ②
-- Q. `/clear`를 하면 이전 대화는? ① 영원히 사라진다 ② `/resume`으로 다시 열 수 있다 ③ CLAUDE.md에 저장된다 ④ 자동으로 요약된다 → 정답 ②
+- **L3-1.** 같은 기능을 계속 만드는 중인데 대화가 너무 길어졌다. 흐름은 유지하고 싶다면? ① `/clear` ② `/compact` ③ `/exit` ④ `/init`
+- **L3-2.** 버그 수정을 끝내고 전혀 다른 문서 작업을 시작한다면? ① `/clear` ② `/compact` ③ `/rewind` ④ `/memory`
+- **L3-3.** Claude가 파일을 잘못 고쳤다. 고치기 전 상태로 돌아가려면? ① `/clear` ② `/rewind` ③ `/context` ④ `/status`
+- **L3-4.** `/clear`를 하면 이전 대화는? ① 영원히 사라진다 ② `/resume`으로 다시 열 수 있다 ③ CLAUDE.md에 저장된다 ④ 자동으로 요약된다
 
 ---
 
@@ -130,11 +132,11 @@
 4. `/permissions` 열어 보기.
 
 퀴즈 문제 은행
-- Q. 큰 작업을 시키기 전에 Claude가 어떻게 할지 먼저 보고 싶다면? ① `acceptEdits` 모드 ② `plan` 모드 ③ `/clear` ④ `/compact` → 정답 ②
-- Q. 권한 요청에서 "Yes, and don't ask again"을 고르면 규칙이 저장되는 곳은? ① `CLAUDE.md` ② `.claude/settings.local.json` ③ `README.md` ④ 저장되지 않는다 → 정답 ②
-- Q. 초보자에게 가장 안전한 사용 습관은? ① 모든 요청을 무조건 허용 ② 요청 내용을 읽고 판단해서 허용 ③ 항상 거부 ④ 권한 요청을 끄기 → 정답 ②
-- Q. 권한 모드를 바꾸는 단축키는? ① `Ctrl+C` ② `Shift+Tab` ③ `Esc` ④ `Ctrl+R` → 정답 ②
-- Q. 파일을 만들었는데 확인 창이 안 떴다. 화면 아래에 `⏵⏵ auto mode on`이 보인다면? ① 고장이다 ② 검사 모델이 대신 검토하는 auto 모드라서 ③ 파일이 안 만들어졌다 ④ 인터넷이 끊겼다 → 정답 ②
+- **L4-1.** 큰 작업을 시키기 전에 Claude가 어떻게 할지 먼저 보고 싶다면? ① `acceptEdits` 모드 ② `plan` 모드 ③ `/clear` ④ `/compact`
+- **L4-2.** 권한 요청에서 "Yes, and don't ask again"을 고르면 규칙이 저장되는 곳은? ① `CLAUDE.md` ② `.claude/settings.local.json` ③ `README.md` ④ 저장되지 않는다
+- **L4-3.** 초보자에게 가장 안전한 사용 습관은? ① 모든 요청을 무조건 허용 ② 요청 내용을 읽고 판단해서 허용 ③ 항상 거부 ④ 권한 요청을 끄기
+- **L4-4.** 권한 모드를 바꾸는 단축키는? ① `Ctrl+C` ② `Shift+Tab` ③ `Esc` ④ `Ctrl+R`
+- **L4-5.** 파일을 만들었는데 확인 창이 안 떴다. 화면 아래에 `⏵⏵ auto mode on`이 보인다면? ① 고장이다 ② 검사 모델이 대신 검토하는 auto 모드라서 ③ 파일이 안 만들어졌다 ④ 인터넷이 끊겼다
 
 ---
 
@@ -159,11 +161,11 @@
 4. `/context`에서 Memory files에 CLAUDE.md가 보이는지 확인.
 
 퀴즈 문제 은행
-- Q. 모든 프로젝트에서 "답변은 한국어로"를 적용하고 싶다면 어디에 쓸까? ① `./CLAUDE.md` ② `~/.claude/CLAUDE.md` ③ `./CLAUDE.local.md` ④ `.claude/settings.json` → 정답 ②
-- Q. 팀원과 공유하지 않고 이 프로젝트에서 나만 쓰는 지침은? ① `./CLAUDE.local.md` ② `./CLAUDE.md` ③ `~/.claude/CLAUDE.md` ④ `README.md` → 정답 ①
-- Q. 프로젝트를 분석해 CLAUDE.md 초안을 만들어 주는 명령은? ① `/memory` ② `/init` ③ `/config` ④ `/compact` → 정답 ②
-- Q. CLAUDE.md 지침이 더 잘 지켜지게 하려면? ① 길고 추상적으로 ② 짧고 구체적으로 ③ 영어로만 ④ 대문자로만 → 정답 ②
-- Q. CLAUDE.md 안에서 README.md 내용도 함께 읽게 하려면? ① `#README.md` ② `@README.md` ③ `!README.md` ④ `/README.md` → 정답 ②
+- **L5-1.** 모든 프로젝트에서 "답변은 한국어로"를 적용하고 싶다면 어디에 쓸까? ① `./CLAUDE.md` ② `~/.claude/CLAUDE.md` ③ `./CLAUDE.local.md` ④ `.claude/settings.json`
+- **L5-2.** 팀원과 공유하지 않고 이 프로젝트에서 나만 쓰는 지침은? ① `./CLAUDE.local.md` ② `./CLAUDE.md` ③ `~/.claude/CLAUDE.md` ④ `README.md`
+- **L5-3.** 프로젝트를 분석해 CLAUDE.md 초안을 만들어 주는 명령은? ① `/memory` ② `/init` ③ `/config` ④ `/compact`
+- **L5-4.** CLAUDE.md 지침이 더 잘 지켜지게 하려면? ① 길고 추상적으로 ② 짧고 구체적으로 ③ 영어로만 ④ 대문자로만
+- **L5-5.** CLAUDE.md 안에서 README.md 내용도 함께 읽게 하려면? ① `#README.md` ② `@README.md` ③ `!README.md` ④ `/README.md`
 
 ---
 
@@ -188,11 +190,11 @@
 4. (선택) 일부러 마지막 쉼표를 넣어 오류가 어떻게 보이는지 확인 후 고치기.
 
 퀴즈 문제 은행
-- Q. 팀 전체가 같은 권한 규칙을 쓰게 하려면 어디에 두고 git에 커밋할까? ① `~/.claude/settings.json` ② `.claude/settings.json` ③ `.claude/settings.local.json` ④ `CLAUDE.local.md` → 정답 ②
-- Q. 팀 설정은 `true`, 내 `.claude/settings.local.json`은 `false`. 이 프로젝트에서 나에게 적용되는 값은? ① `true` ② `false` ③ 오류 ④ 랜덤 → 정답 ② (프로젝트 로컬 > 공유 프로젝트)
-- Q. 다음 중 settings.json에서 오류가 나는 것은? ① 키를 큰따옴표로 감싸기 ② 마지막 항목 뒤에 쉼표 ③ 배열 사용 ④ 중괄호로 시작 → 정답 ②
-- Q. `.env` 파일을 Claude가 절대 읽지 못하게 확실히 막으려면? ① CLAUDE.md에 "읽지 마" 쓰기 ② settings.json의 `deny`에 `Read(./.env)` 추가 ③ `/clear` ④ `/compact` → 정답 ②
-- Q. 어떤 설정 파일이 로드됐는지 확인하는 명령은? ① `/status` ② `/init` ③ `/rewind` ④ `/resume` → 정답 ①
+- **L6-1.** 팀 전체가 같은 권한 규칙을 쓰게 하려면 어디에 두고 git에 커밋할까? ① `~/.claude/settings.json` ② `.claude/settings.json` ③ `.claude/settings.local.json` ④ `CLAUDE.local.md`
+- **L6-2.** 팀 설정은 `true`, 내 `.claude/settings.local.json`은 `false`. 이 프로젝트에서 나에게 적용되는 값은? ① `true` ② `false` ③ 오류 ④ 랜덤
+- **L6-3.** 다음 중 settings.json에서 오류가 나는 것은? ① 키를 큰따옴표로 감싸기 ② 마지막 항목 뒤에 쉼표 ③ 배열 사용 ④ 중괄호로 시작
+- **L6-4.** `.env` 파일을 Claude가 절대 읽지 못하게 확실히 막으려면? ① CLAUDE.md에 "읽지 마" 쓰기 ② settings.json의 `deny`에 `Read(./.env)` 추가 ③ `/clear` ④ `/compact`
+- **L6-5.** 어떤 설정 파일이 로드됐는지 확인하는 명령은? ① `/status` ② `/init` ③ `/rewind` ④ `/resume`
 
 ---
 

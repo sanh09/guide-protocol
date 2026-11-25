@@ -1,5 +1,7 @@
 # 커리큘럼: Claude Code 고급
 
+> 퀴즈 문제 은행의 정답은 이 파일에 없다. 정답은 `quiz-answers.md`에 문제 번호(예: L3-2)별로 있고, 학습자가 답한 뒤 채점할 때만 읽는다. 문제를 낼 때는 보기 순서를 섞는다.
+
 수업할 레슨 부분만 읽는다. 사실 확인은 `facts.md`. 실습은 **연습용 저장소**에서 먼저 한다(훅·MCP·자동화는 실제 명령을 실행하기 때문이다).
 
 연습 저장소 준비:
@@ -43,10 +45,10 @@ claude
 실습: 학습자의 고민 3가지를 듣고 각각 어떤 기능으로 풀지 함께 표로 정리한다.
 
 퀴즈 문제 은행
-- Q. "파일을 수정할 때마다 반드시 prettier를 실행"하려면? ① CLAUDE.md ② 훅 ③ 서브에이전트 ④ MCP → ②
-- Q. 사내 Notion 문서를 읽고 기능을 구현하게 하려면? ① 훅 ② MCP ③ CLAUDE.md ④ /compact → ②
-- Q. 리팩터링 결과를 편견 없이 검토하게 하려면? ① 같은 대화에서 "검토해줘" ② 새 컨텍스트의 서브에이전트에게 diff 리뷰 맡기기 ③ CLAUDE.md에 "잘 검토해" ④ /rewind → ②
-- Q. CLAUDE.md의 "migrations 폴더 수정 금지"를 Claude가 가끔 어긴다. 확실한 방법은? ① 문장을 대문자로 ② PreToolUse 훅이나 Edit deny 규칙 ③ 더 길게 설명 ④ /clear → ②
+- **L1-1.** "파일을 수정할 때마다 반드시 prettier를 실행"하려면? ① CLAUDE.md ② 훅 ③ 서브에이전트 ④ MCP
+- **L1-2.** 사내 Notion 문서를 읽고 기능을 구현하게 하려면? ① 훅 ② MCP ③ CLAUDE.md ④ /compact
+- **L1-3.** 리팩터링 결과를 편견 없이 검토하게 하려면? ① 같은 대화에서 "검토해줘" ② 새 컨텍스트의 서브에이전트에게 diff 리뷰 맡기기 ③ CLAUDE.md에 "잘 검토해" ④ /rewind
+- **L1-4.** CLAUDE.md의 "migrations 폴더 수정 금지"를 Claude가 가끔 어긴다. 확실한 방법은? ① 문장을 대문자로 ② PreToolUse 훅이나 Edit deny 규칙 ③ 더 길게 설명 ④ /clear
 
 ---
 
@@ -71,10 +73,10 @@ claude
 4. 실습이 끝나면 `claude mcp remove`로 정리.
 
 퀴즈 문제 은행
-- Q. 팀원 모두가 같은 MCP 서버 설정을 git으로 공유하려면? ① `--scope local` ② `--scope project` ③ `--scope user` ④ CLAUDE.md에 URL 적기 → ②
-- Q. `claude mcp add ... airtable -- npx -y airtable-mcp-server`에서 `--`의 의미는? ① 주석 ② Claude 옵션과 서버 실행 명령을 구분 ③ 백그라운드 실행 ④ 오류 무시 → ②
-- Q. MCP 서버가 `! Needs authentication`으로 보인다면? ① `/mcp`에서 서버를 골라 로그인 ② `/clear` ③ 재설치 ④ settings.json 삭제 → ①
-- Q. `.mcp.json`에 API 토큰을 넣는 가장 안전한 방법은? ① 토큰을 그대로 적고 커밋 ② `${MY_TOKEN}`처럼 환경 변수로 참조 ③ CLAUDE.md에 적기 ④ 파일 이름에 넣기 → ②
+- **L2-1.** 팀원 모두가 같은 MCP 서버 설정을 git으로 공유하려면? ① `--scope local` ② `--scope project` ③ `--scope user` ④ CLAUDE.md에 URL 적기
+- **L2-2.** `claude mcp add ... airtable -- npx -y airtable-mcp-server`에서 `--`의 의미는? ① 주석 ② Claude 옵션과 서버 실행 명령을 구분 ③ 백그라운드 실행 ④ 오류 무시
+- **L2-3.** MCP 서버가 `! Needs authentication`으로 보인다면? ① `/mcp`에서 서버를 골라 로그인 ② `/clear` ③ 재설치 ④ settings.json 삭제
+- **L2-4.** `.mcp.json`에 API 토큰을 넣는 가장 안전한 방법은? ① 토큰을 그대로 적고 커밋 ② `${MY_TOKEN}`처럼 환경 변수로 참조 ③ CLAUDE.md에 적기 ④ 파일 이름에 넣기
 
 ---
 
@@ -109,10 +111,10 @@ the problem, show the current code, and provide an improved version.
 3. description에 "Use proactively after code changes"를 넣고, 코드 수정 후 자동으로 위임되는지 관찰.
 
 퀴즈 문제 은행
-- Q. 서브에이전트 파일에서 반드시 있어야 하는 필드는? ① name, description ② tools, model ③ model만 ④ 없음 → ①
-- Q. 코드를 읽기만 하는 리뷰어 서브에이전트의 도구로 알맞은 것은? ① `Read, Grep, Glob` ② `Bash, Write, Edit` ③ 모든 도구 ④ `WebFetch`만 → ①
-- Q. 서브에이전트를 쓰는 가장 큰 이유는? ① 더 빠른 타이핑 ② 조사·리뷰를 별도 컨텍스트에서 해서 메인 컨텍스트를 깨끗하게 유지 ③ 비용이 0 ④ 인터넷 없이 실행 → ②
-- Q. 특정 서브에이전트가 이번 작업에 반드시 쓰이게 하려면? ① `@`로 그 에이전트를 지정 ② /clear ③ /compact ④ 파일 이름 변경 → ①
+- **L3-1.** 서브에이전트 파일에서 반드시 있어야 하는 필드는? ① name, description ② tools, model ③ model만 ④ 없음
+- **L3-2.** 코드를 읽기만 하는 리뷰어 서브에이전트의 도구로 알맞은 것은? ① `Read, Grep, Glob` ② `Bash, Write, Edit` ③ 모든 도구 ④ `WebFetch`만
+- **L3-3.** 서브에이전트를 쓰는 가장 큰 이유는? ① 더 빠른 타이핑 ② 조사·리뷰를 별도 컨텍스트에서 해서 메인 컨텍스트를 깨끗하게 유지 ③ 비용이 0 ④ 인터넷 없이 실행
+- **L3-4.** 특정 서브에이전트가 이번 작업에 반드시 쓰이게 하려면? ① `@`로 그 에이전트를 지정 ② /clear ③ /compact ④ 파일 이름 변경
 
 ---
 
@@ -182,10 +184,10 @@ exit 0
 3. (선택) `Notification` 훅으로 입력 대기 시 데스크톱 알림 받기. Claude에게 학습자 OS에 맞게 써 달라고 한다.
 
 퀴즈 문제 은행
-- Q. 도구 실행을 **막을 수 있는** 이벤트는? ① PostToolUse ② PreToolUse ③ Stop ④ Notification → ②
-- Q. 차단 훅 스크립트가 작업을 막으려면 어떤 종료 코드로 끝나야 하나? ① 0 ② 1 ③ 2 ④ 127 → ③
-- Q. 편집 도구에만 반응하게 하는 matcher는? ① `".*"` ② `"Edit|Write"` ③ 비워 두기 ④ `"Bash"` → ②
-- Q. 클론한 오픈소스 저장소에 `.claude/settings.json` 훅이 있다. 가장 먼저 할 일은? ① 바로 실행 ② 훅이 무슨 명령을 실행하는지 읽어 보기 ③ 삭제 후 커밋 ④ bypass 모드로 전환 → ②
+- **L4-1.** 도구 실행을 **막을 수 있는** 이벤트는? ① PostToolUse ② PreToolUse ③ Stop ④ Notification
+- **L4-2.** 차단 훅 스크립트가 작업을 막으려면 어떤 종료 코드로 끝나야 하나? ① 0 ② 1 ③ 2 ④ 127
+- **L4-3.** 편집 도구에만 반응하게 하는 matcher는? ① `".*"` ② `"Edit|Write"` ③ 비워 두기 ④ `"Bash"`
+- **L4-4.** 클론한 오픈소스 저장소에 `.claude/settings.json` 훅이 있다. 가장 먼저 할 일은? ① 바로 실행 ② 훅이 무슨 명령을 실행하는지 읽어 보기 ③ 삭제 후 커밋 ④ bypass 모드로 전환
 
 ---
 
@@ -225,10 +227,10 @@ exit 0
 4. (선택) GitHub 저장소에 올리고 다른 컴퓨터나 팀원이 설치해 본다.
 
 퀴즈 문제 은행
-- Q. 마켓플레이스의 `source`를 `"../plugins/x"`로 쓰면? ① 정상 ② validate가 `..` 경로 오류를 낸다 ③ 자동 수정 ④ 설치는 된다 → ②
-- Q. 플러그인 `my-tools`의 스킬 `review`를 직접 부르는 명령은? ① `/review` ② `/my-tools:review` ③ `@review` ④ `!review` → ②
-- Q. 스킬 하나에 긴 참고 문서가 필요하다. 가장 좋은 구성은? ① 전부 SKILL.md에 ② `references/`에 두고 SKILL.md에 언제 읽을지 적기 ③ CLAUDE.md에 ④ description에 → ②
-- Q. 배포한 플러그인을 고쳤다. 사용자가 새 버전을 받게 하려면? ① `plugin.json`의 `version`을 올려 push ② 저장소 이름 변경 ③ 아무것도 안 해도 즉시 반영 ④ 사용자가 재설치해야만 → ①
+- **L5-1.** 마켓플레이스의 `source`를 `"../plugins/x"`로 쓰면? ① 정상 ② validate가 `..` 경로 오류를 낸다 ③ 자동 수정 ④ 설치는 된다
+- **L5-2.** 플러그인 `my-tools`의 스킬 `review`를 직접 부르는 명령은? ① `/review` ② `/my-tools:review` ③ `@review` ④ `!review`
+- **L5-3.** 스킬 하나에 긴 참고 문서가 필요하다. 가장 좋은 구성은? ① 전부 SKILL.md에 ② `references/`에 두고 SKILL.md에 언제 읽을지 적기 ③ CLAUDE.md에 ④ description에
+- **L5-4.** 배포한 플러그인을 고쳤다. 사용자가 새 버전을 받게 하려면? ① `plugin.json`의 `version`을 올려 push ② 저장소 이름 변경 ③ 아무것도 안 해도 즉시 반영 ④ 사용자가 재설치해야만
 
 ---
 
@@ -267,10 +269,10 @@ done
 3. (GitHub 저장소가 있다면) `/install-github-app`으로 Actions 설정 흐름 살펴보기.
 
 퀴즈 문제 은행
-- Q. CI에서 팀원 컴퓨터의 훅이나 MCP 설정에 영향받지 않고 같은 결과를 내려면? ① `--bare` ② `--verbose` ③ `--continue` ④ `/clear` → ①
-- Q. 무인 실행에서 허용한 도구 외에는 묻지 않고 거부하려면? ① `--permission-mode dontAsk` ② `--permission-mode bypassPermissions` ③ `--permission-mode plan` ④ 옵션 없음 → ①
-- Q. 신뢰하지 않은 저장소에서 `--bare` 없이 `claude -p`를 실행할 때의 위험은? ① 없다 ② 프로젝트의 훅과 MCP 서버가 확인 창 없이 실행될 수 있다 ③ 결과가 영어로만 나온다 ④ 실행이 느려진다 → ②
-- Q. 2,000개 파일 마이그레이션을 fan-out으로 하기 전에 먼저 할 일은? ① 바로 전체 실행 ② 2~3개 파일로 시험하고 프롬프트 다듬기 ③ bypass 모드 켜기 ④ git 기록 삭제 → ②
+- **L6-1.** CI에서 팀원 컴퓨터의 훅이나 MCP 설정에 영향받지 않고 같은 결과를 내려면? ① `--bare` ② `--verbose` ③ `--continue` ④ `/clear`
+- **L6-2.** 무인 실행에서 허용한 도구 외에는 묻지 않고 거부하려면? ① `--permission-mode dontAsk` ② `--permission-mode bypassPermissions` ③ `--permission-mode plan` ④ 옵션 없음
+- **L6-3.** 신뢰하지 않은 저장소에서 `--bare` 없이 `claude -p`를 실행할 때의 위험은? ① 없다 ② 프로젝트의 훅과 MCP 서버가 확인 창 없이 실행될 수 있다 ③ 결과가 영어로만 나온다 ④ 실행이 느려진다
+- **L6-4.** 2,000개 파일 마이그레이션을 fan-out으로 하기 전에 먼저 할 일은? ① 바로 전체 실행 ② 2~3개 파일로 시험하고 프롬프트 다듬기 ③ bypass 모드 켜기 ④ git 기록 삭제
 
 ---
 
@@ -293,10 +295,10 @@ done
 4. worktree 정리 방법을 공식 문서(worktrees)로 확인하게 한다.
 
 퀴즈 문제 은행
-- Q. 두 기능을 동시에 Claude 두 개로 구현할 때 편집 충돌을 피하려면? ① 같은 폴더에서 두 세션 ② `claude --worktree 이름`으로 각자 격리 ③ /compact ④ /clear → ②
-- Q. 방금 구현한 세션에게 "검토해줘"라고 하는 것보다 새 세션 리뷰가 나은 이유는? ① 더 싸다 ② 자기가 쓴 코드에 대한 편향 없이 결과만 본다 ③ 더 빠르다 ④ 차이 없다 → ②
-- Q. 리뷰어가 사소한 지적을 쏟아내 과잉 설계로 이어진다. 해결책은? ① 리뷰어를 없앤다 ② 정확성·요구 사항에 영향을 주는 것만 보고하게 지시 ③ 모든 지적을 반영 ④ 모델을 바꾼다 → ②
-- Q. 커밋이 하나도 없는 새 저장소에서 `claude --worktree x`를 실행하면? ① 정상 작동 ② 기준 브랜치를 찾지 못해 실패한다. 먼저 커밋 필요 ③ 자동으로 커밋 생성 ④ plan 모드로 전환 → ②
+- **L7-1.** 두 기능을 동시에 Claude 두 개로 구현할 때 편집 충돌을 피하려면? ① 같은 폴더에서 두 세션 ② `claude --worktree 이름`으로 각자 격리 ③ /compact ④ /clear
+- **L7-2.** 방금 구현한 세션에게 "검토해줘"라고 하는 것보다 새 세션 리뷰가 나은 이유는? ① 더 싸다 ② 자기가 쓴 코드에 대한 편향 없이 결과만 본다 ③ 더 빠르다 ④ 차이 없다
+- **L7-3.** 리뷰어가 사소한 지적을 쏟아내 과잉 설계로 이어진다. 해결책은? ① 리뷰어를 없앤다 ② 정확성·요구 사항에 영향을 주는 것만 보고하게 지시 ③ 모든 지적을 반영 ④ 모델을 바꾼다
+- **L7-4.** 커밋이 하나도 없는 새 저장소에서 `claude --worktree x`를 실행하면? ① 정상 작동 ② 기준 브랜치를 찾지 못해 실패한다. 먼저 커밋 필요 ③ 자동으로 커밋 생성 ④ plan 모드로 전환
 
 ---
 

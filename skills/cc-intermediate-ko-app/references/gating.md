@@ -35,13 +35,15 @@
 
 ## 4. 기초 확인 퀴즈 (5문제, 4문제 이상 통과)
 
+문제 번호(C-1~C-5)의 정답은 `quiz-answers.md`의 '수준 확인 퀴즈' 표에 있다. 학습자가 답을 보낸 뒤 채점할 때만 읽는다. 문제를 낼 때는 보기 순서를 섞고, 정답을 짐작하게 하는 표시나 예시를 넣지 않는다(SKILL.md의 퀴즈 규칙).
+
 퀴즈 표시 도구가 있으면 그것을 쓴다. 없으면 텍스트로 내고, 정답은 학습자가 답한 뒤에 공개한다. 퀴즈를 내는 이유는 "채팅 앱에는 지난 수료 기록이 남지 않아서 짧게 확인해요"라고 한 줄로 설명한다.
 
-1. 같은 작업을 계속하는데 대화가 너무 길어져서, 흐름은 유지한 채 공간을 확보하려면? ① `/clear` ② `/compact` ③ `/exit` ④ `/init` → ②
-2. Claude를 거치지 않고 터미널 명령 `ls`를 바로 실행하는 입력은? ① `/ls` ② `@ls` ③ `! ls` ④ `# ls` → ③
-3. 모든 프로젝트에 적용할 나만의 지침을 쓰는 곳은? ① `./CLAUDE.md` ② `~/.claude/CLAUDE.md` ③ `./CLAUDE.local.md` ④ `.claude/settings.json` → ②
-4. 팀원과 공유하지 않고 이 프로젝트에서 나만 쓸 설정 파일은? ① `.claude/settings.json` ② `~/.claude/settings.json` ③ `.claude/settings.local.json` ④ `CLAUDE.md` → ③
-5. 큰 작업 전에 Claude가 파일을 바꾸지 않고 계획만 보여 주게 하려면? ① plan 모드 ② acceptEdits 모드 ③ `/compact` ④ `/resume` → ①
+1. **C-1.** 같은 작업을 계속하는데 대화가 너무 길어져서, 흐름은 유지한 채 공간을 확보하려면? ① `/clear` ② `/compact` ③ `/exit` ④ `/init`
+2. **C-2.** Claude를 거치지 않고 터미널 명령 `ls`를 바로 실행하는 입력은? ① `/ls` ② `@ls` ③ `! ls` ④ `# ls`
+3. **C-3.** 모든 프로젝트에 적용할 나만의 지침을 쓰는 곳은? ① `./CLAUDE.md` ② `~/.claude/CLAUDE.md` ③ `./CLAUDE.local.md` ④ `.claude/settings.json`
+4. **C-4.** 팀원과 공유하지 않고 이 프로젝트에서 나만 쓸 설정 파일은? ① `.claude/settings.json` ② `~/.claude/settings.json` ③ `.claude/settings.local.json` ④ `CLAUDE.md`
+5. **C-5.** 큰 작업 전에 Claude가 파일을 바꾸지 않고 계획만 보여 주게 하려면? ① plan 모드 ② acceptEdits 모드 ③ `/compact` ④ `/resume`
 
 - **4문제 이상 정답**: 통과. 시작한다.
 - **3문제 이하**: 틀린 문제의 주제를 짚어 주고 5번으로 간다. "이 부분만 기초 과정에서 복습하고 오시면 돼요"처럼 부담을 줄여 말한다.

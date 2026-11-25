@@ -34,6 +34,13 @@ Claude Code는 자주 업데이트된다. 여기와 학습자 화면이 다르�
 | `Ctrl+G` | 프롬프트를 기본 텍스트 편집기에서 편집 |
 | 줄바꿈 | `\` + `Enter`(모든 터미널), `Ctrl+J`(모든 터미널), `Shift+Enter`(iTerm2, Windows Terminal, Apple 터미널 등 대부분) |
 
+## 입력창 자동 제안 (Prompt suggestions)
+출처: https://code.claude.com/docs/en/interactive-mode.md
+
+- Claude가 답한 뒤, 다음에 입력할 만한 내용을 입력창에 회색 글씨로 제안할 수 있다. `Tab` 또는 `→`로 채우고 `Enter`로 보낸다. 직접 타이핑을 시작하면 사라진다.
+- 끄는 법: `/config`에서 **Prompt suggestions** 끄기, 또는 settings 파일에 `"promptSuggestionEnabled": false`, 또는 환경 변수 `CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=false`(설정보다 우선).
+- plan 모드에서는 제안하지 않는다.
+
 ## 주요 슬래시 명령
 출처: https://code.claude.com/docs/en/commands.md
 

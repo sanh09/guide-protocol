@@ -1,5 +1,7 @@
 # 커리큘럼: Claude Code 중급
 
+> 퀴즈 문제 은행의 정답은 이 파일에 없다. 정답은 `quiz-answers.md`에 문제 번호(예: L3-2)별로 있고, 학습자가 답한 뒤 채점할 때만 읽는다. 문제를 낼 때는 보기 순서를 섞는다.
+
 수업할 레슨 부분만 읽는다. 사실 확인은 `facts.md`. 학습자의 실제 프로젝트가 있으면 그 프로젝트로 실습하게 한다. 없으면 각 레슨의 연습 예제를 쓴다.
 
 목차
@@ -46,10 +48,10 @@ claude
 3. 고친 요청을 실제로 보내 보고, Claude가 테스트를 돌렸는지 확인한다.
 
 퀴즈 문제 은행
-- Q. Claude가 혼자 오래 작업해도 결과가 맞을 가능성을 가장 높이는 방법은? ① 요청을 짧게 쓴다 ② 실행할 수 있는 확인 방법(테스트 등)을 준다 ③ 여러 번 다시 묻는다 ④ 대문자로 강조한다 → ②
-- Q. 기존 코드 스타일에 맞춘 새 위젯을 만들게 하려면? ① "예쁘게 만들어줘" ② 비슷한 기존 파일을 예시로 가리킨다 ③ 라이브러리를 새로 설치하게 한다 ④ 아무 설명 없이 맡긴다 → ②
-- Q. 오류 화면을 보여주고 싶을 때 가장 빠른 방법은? ① 화면 내용을 손으로 옮겨 적기 ② 스크린샷을 붙여넣기 ③ /clear ④ 설명하지 않기 → ②
-- Q. 막연한 요청이 오히려 좋은 경우는? ① 탐색하며 아이디어를 얻고 싶을 때 ② 배포 직전 ③ 보안 수정 ④ 결제 코드 → ①
+- **L1-1.** Claude가 혼자 오래 작업해도 결과가 맞을 가능성을 가장 높이는 방법은? ① 요청을 짧게 쓴다 ② 실행할 수 있는 확인 방법(테스트 등)을 준다 ③ 여러 번 다시 묻는다 ④ 대문자로 강조한다
+- **L1-2.** 기존 코드 스타일에 맞춘 새 위젯을 만들게 하려면? ① "예쁘게 만들어줘" ② 비슷한 기존 파일을 예시로 가리킨다 ③ 라이브러리를 새로 설치하게 한다 ④ 아무 설명 없이 맡긴다
+- **L1-3.** 오류 화면을 보여주고 싶을 때 가장 빠른 방법은? ① 화면 내용을 손으로 옮겨 적기 ② 스크린샷을 붙여넣기 ③ /clear ④ 설명하지 않기
+- **L1-4.** 막연한 요청이 오히려 좋은 경우는? ① 탐색하며 아이디어를 얻고 싶을 때 ② 배포 직전 ③ 보안 수정 ④ 결제 코드
 
 ---
 
@@ -71,10 +73,10 @@ claude
 4. "설명적인 메시지로 커밋해줘"
 
 퀴즈 문제 은행
-- Q. 변수 이름 하나를 바꾸는 작업이라면? ① 반드시 plan 모드 ② 그냥 바로 요청 ③ SPEC.md 작성 ④ 서브에이전트 사용 → ②
-- Q. plan 모드에서 Claude가 하지 않는 것은? ① 파일 읽기 ② 계획 제시 ③ 소스 파일 수정 ④ 질문에 답하기 → ③
-- Q. Claude가 세운 계획을 직접 고치고 싶다면? ① `Ctrl+G` ② `Ctrl+L` ③ `Esc` 두 번 ④ `/compact` → ①
-- Q. 여러 파일을 바꾸고 접근 방법도 확실하지 않은 기능이다. 가장 알맞은 첫 단계는? ① acceptEdits 모드로 바로 구현 ② plan 모드로 탐색과 계획 ③ /clear ④ 커밋부터 → ②
+- **L2-1.** 변수 이름 하나를 바꾸는 작업이라면? ① 반드시 plan 모드 ② 그냥 바로 요청 ③ SPEC.md 작성 ④ 서브에이전트 사용
+- **L2-2.** plan 모드에서 Claude가 하지 않는 것은? ① 파일 읽기 ② 계획 제시 ③ 소스 파일 수정 ④ 질문에 답하기
+- **L2-3.** Claude가 세운 계획을 직접 고치고 싶다면? ① `Ctrl+G` ② `Ctrl+L` ③ `Esc` 두 번 ④ `/compact`
+- **L2-4.** 여러 파일을 바꾸고 접근 방법도 확실하지 않은 기능이다. 가장 알맞은 첫 단계는? ① acceptEdits 모드로 바로 구현 ② plan 모드로 탐색과 계획 ③ /clear ④ 커밋부터
 
 ---
 
@@ -96,9 +98,9 @@ claude
 3. (`gh`와 원격 저장소가 있다면) "PR을 만들어줘" → 생성된 설명 검토.
 
 퀴즈 문제 은행
-- Q. Claude가 `rm` 같은 Bash 명령으로 지운 파일을 체크포인트로 되돌릴 수 있나? ① 항상 된다 ② 안 된다. 체크포인트는 파일 편집 도구로 바꾼 것만 추적한다 ③ /clear로 된다 ④ /compact로 된다 → ②
-- Q. 위험한 리팩터링을 시도하기 전 가장 안전한 준비는? ① 그냥 시도 ② 먼저 커밋해 두기 ③ /clear ④ auto 모드 → ②
-- Q. PR을 올리기 전에 Claude에게 추가로 부탁하면 좋은 것은? ① 위험 요소와 고려 사항 짚기 ② 이모지 추가 ③ 테스트 삭제 ④ 아무것도 → ①
+- **L3-1.** Claude가 `rm` 같은 Bash 명령으로 지운 파일을 체크포인트로 되돌릴 수 있나? ① 항상 된다 ② 안 된다. 체크포인트는 파일 편집 도구로 바꾼 것만 추적한다 ③ /clear로 된다 ④ /compact로 된다
+- **L3-2.** 위험한 리팩터링을 시도하기 전 가장 안전한 준비는? ① 그냥 시도 ② 먼저 커밋해 두기 ③ /clear ④ auto 모드
+- **L3-3.** PR을 올리기 전에 Claude에게 추가로 부탁하면 좋은 것은? ① 위험 요소와 고려 사항 짚기 ② 이모지 추가 ③ 테스트 삭제 ④ 아무것도
 
 ---
 
@@ -129,10 +131,10 @@ claude
 3. `/permissions`에서 규칙이 보이는지, `/status`의 Setting sources를 확인한다.
 
 퀴즈 문제 은행
-- Q. allow에 `Bash(aws s3 ls)`, deny에 `Bash(aws *)`가 있다. `aws s3 ls`는? ① 허용 ② 거부. deny가 먼저 평가된다 ③ 물어본다 ④ 오류 → ②
-- Q. `git diff`로 시작하는 명령만 허용하고 `git diff-index`는 제외하려면? ① `Bash(git diff*)` ② `Bash(git diff *)` ③ `Bash(git*)` ④ `Bash(*)` → ②
-- Q. 홈 폴더의 `.ssh` 전체 읽기를 막는 규칙은? ① `Read(./.ssh)` ② `Read(~/.ssh/**)` ③ `Write(.ssh)` ④ `Bash(ssh)` → ②
-- Q. 팀 저장소의 `.claude/settings.json`에 `"defaultMode": "bypassPermissions"`를 넣으면? ① 모든 팀원이 bypass 모드 ② 프로젝트 파일에서는 적용되지 않는다 ③ 오류로 Claude Code가 안 켜진다 ④ auto 모드가 된다 → ②
+- **L4-1.** allow에 `Bash(aws s3 ls)`, deny에 `Bash(aws *)`가 있다. `aws s3 ls`는? ① 허용 ② 거부. deny가 먼저 평가된다 ③ 물어본다 ④ 오류
+- **L4-2.** `git diff`로 시작하는 명령만 허용하고 `git diff-index`는 제외하려면? ① `Bash(git diff*)` ② `Bash(git diff *)` ③ `Bash(git*)` ④ `Bash(*)`
+- **L4-3.** 홈 폴더의 `.ssh` 전체 읽기를 막는 규칙은? ① `Read(./.ssh)` ② `Read(~/.ssh/**)` ③ `Write(.ssh)` ④ `Bash(ssh)`
+- **L4-4.** 팀 저장소의 `.claude/settings.json`에 `"defaultMode": "bypassPermissions"`를 넣으면? ① 모든 팀원이 bypass 모드 ② 프로젝트 파일에서는 적용되지 않는다 ③ 오류로 Claude Code가 안 켜진다 ④ auto 모드가 된다
 
 ---
 
@@ -171,10 +173,10 @@ Fix GitHub issue $ARGUMENTS.
 4. description을 바꿔 가며 "변경 사항 봐줘"라고만 했을 때 자동으로 쓰이는지 관찰하기.
 
 퀴즈 문제 은행
-- Q. 배포처럼 부작용이 큰 스킬을 Claude가 알아서 실행하지 못하게 하려면? ① `disable-model-invocation: true` ② `user-invocable: false` ③ description 비우기 ④ 파일 이름 바꾸기 → ①
-- Q. `/fix-issue 42`를 실행하면 SKILL.md의 `$ARGUMENTS`는? ① 빈 값 ② `42` ③ `fix-issue` ④ 오류 → ②
-- Q. Claude가 스킬을 언제 쓸지 판단할 때 주로 보는 것은? ① 파일 크기 ② `description` ③ 폴더 생성 날짜 ④ 파일 확장자 → ②
-- Q. 가끔만 필요한 긴 배포 절차를 적어 두기에 더 알맞은 곳은? ① CLAUDE.md ② 스킬 ③ settings.json ④ .gitignore → ②
+- **L5-1.** 배포처럼 부작용이 큰 스킬을 Claude가 알아서 실행하지 못하게 하려면? ① `disable-model-invocation: true` ② `user-invocable: false` ③ description 비우기 ④ 파일 이름 바꾸기
+- **L5-2.** `/fix-issue 42`를 실행하면 SKILL.md의 `$ARGUMENTS`는? ① 빈 값 ② `42` ③ `fix-issue` ④ 오류
+- **L5-3.** Claude가 스킬을 언제 쓸지 판단할 때 주로 보는 것은? ① 파일 크기 ② `description` ③ 폴더 생성 날짜 ④ 파일 확장자
+- **L5-4.** 가끔만 필요한 긴 배포 절차를 적어 두기에 더 알맞은 곳은? ① CLAUDE.md ② 스킬 ③ settings.json ④ .gitignore
 
 ---
 
@@ -198,10 +200,10 @@ Fix GitHub issue $ARGUMENTS.
 4. "서브에이전트로 이 프로젝트의 테스트 구조를 조사해서 요약해줘" 실행 후 `/context` 변화 비교.
 
 퀴즈 문제 은행
-- Q. 같은 버그를 세 번째 고쳐 달라고 했는데 여전히 틀린다. 가장 좋은 다음 행동은? ① 같은 말 반복 ② `/clear` 후 배운 점을 넣어 새로 요청 ③ 대문자로 다시 요청 ④ auto 모드로 전환 → ②
-- Q. 어제 하던 대화를 목록에서 골라 이어 가려면? ① `claude --resume` ② `claude -p` ③ `/init` ④ `/clear` → ①
-- Q. 대화 기록을 늘리지 않고 잠깐 사실 하나만 확인하려면? ① `/btw` ② `/compact` ③ `/init` ④ `/memory` → ①
-- Q. 큰 코드베이스 조사가 메인 대화의 컨텍스트를 채우지 않게 하려면? ① 서브에이전트에게 조사를 맡긴다 ② 모든 파일을 @로 붙인다 ③ /model 변경 ④ /rewind → ①
+- **L6-1.** 같은 버그를 세 번째 고쳐 달라고 했는데 여전히 틀린다. 가장 좋은 다음 행동은? ① 같은 말 반복 ② `/clear` 후 배운 점을 넣어 새로 요청 ③ 대문자로 다시 요청 ④ auto 모드로 전환
+- **L6-2.** 어제 하던 대화를 목록에서 골라 이어 가려면? ① `claude --resume` ② `claude -p` ③ `/init` ④ `/clear`
+- **L6-3.** 대화 기록을 늘리지 않고 잠깐 사실 하나만 확인하려면? ① `/btw` ② `/compact` ③ `/init` ④ `/memory`
+- **L6-4.** 큰 코드베이스 조사가 메인 대화의 컨텍스트를 채우지 않게 하려면? ① 서브에이전트에게 조사를 맡긴다 ② 모든 파일을 @로 붙인다 ③ /model 변경 ④ /rewind
 
 ---
 
@@ -224,9 +226,9 @@ Fix GitHub issue $ARGUMENTS.
 3. `claude -p "staged 변경 사항을 보고 알맞은 커밋을 만들어줘" --allowedTools "Bash(git diff *),Bash(git log *),Bash(git status *),Bash(git commit *)"`
 
 퀴즈 문제 은행
-- Q. `claude -p` 결과를 스크립트에서 JSON으로 다루려면? ① `--output-format json` ② `--json` ③ `/config json` ④ `-j` → ①
-- Q. `-p` 실행에서 git 커밋이 권한 때문에 거부됐다. 해결 방법은? ① `--allowedTools "Bash(git commit *)"` 추가 ② `/clear` ③ `--continue` ④ CLAUDE.md 수정 → ①
-- Q. `git log | claude -p "요약"`에서 `|`의 역할은? ① 주석 ② 앞 명령의 출력을 Claude의 입력으로 넘김 ③ 파일 저장 ④ 명령 취소 → ②
+- **L7-1.** `claude -p` 결과를 스크립트에서 JSON으로 다루려면? ① `--output-format json` ② `--json` ③ `/config json` ④ `-j`
+- **L7-2.** `-p` 실행에서 git 커밋이 권한 때문에 거부됐다. 해결 방법은? ① `--allowedTools "Bash(git commit *)"` 추가 ② `/clear` ③ `--continue` ④ CLAUDE.md 수정
+- **L7-3.** `git log | claude -p "요약"`에서 `|`의 역할은? ① 주석 ② 앞 명령의 출력을 Claude의 입력으로 넘김 ③ 파일 저장 ④ 명령 취소
 
 ---
 

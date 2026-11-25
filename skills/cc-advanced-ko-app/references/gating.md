@@ -35,13 +35,15 @@
 
 ## 3. 중급 확인 퀴즈 (5문제, 4문제 이상 통과)
 
+문제 번호(C-1~C-5)의 정답은 `quiz-answers.md`의 '수준 확인 퀴즈' 표에 있다. 학습자가 답을 보낸 뒤 채점할 때만 읽는다. 문제를 낼 때는 보기 순서를 섞고, 정답을 짐작하게 하는 표시나 예시를 넣지 않는다(SKILL.md의 퀴즈 규칙).
+
 퀴즈 표시 도구가 있으면 그것을 쓴다. 없으면 텍스트로 내고, 정답은 학습자가 답한 뒤에 공개한다. 중급을 마친 학습자에게는 "채팅 앱에는 지난 수료 기록이 남지 않아서 짧게 확인해요"라고 한 줄로 설명한다.
 
-1. allow에 `Bash(aws s3 ls)`, deny에 `Bash(aws *)`가 있다. `aws s3 ls` 실행은? ① 허용 ② 거부 ③ 물어본다 ④ 오류 → ② (deny → ask → allow 순서)
-2. `git diff`로 시작하는 명령만 허용하고 `git diff-index`는 맞지 않게 하는 규칙은? ① `Bash(git diff*)` ② `Bash(git diff *)` ③ `Bash(git*)` ④ `Bash(*)` → ②
-3. 사용자가 `/deploy`로 부를 때만 실행되고 Claude가 알아서 실행하지 않는 스킬을 만들려면 머리말에? ① `user-invocable: false` ② `disable-model-invocation: true` ③ `allowed-tools: none` ④ `model: haiku` → ②
-4. `claude -p` 결과를 스크립트에서 파싱하려면? ① `--output-format json` ② `--verbose` ③ `--continue` ④ `--bare`만 쓰기 → ①
-5. Claude가 Bash `rm`으로 지운 파일을 되돌리는 가장 믿을 만한 방법은? ① `/rewind` ② `/compact` ③ git에 미리 커밋해 둔 상태에서 복구 ④ `/clear` → ③ (체크포인트는 Bash 변경을 추적하지 않는다)
+1. **C-1.** allow에 `Bash(aws s3 ls)`, deny에 `Bash(aws *)`가 있다. `aws s3 ls` 실행은? ① 허용 ② 거부 ③ 물어본다 ④ 오류
+2. **C-2.** `git diff`로 시작하는 명령만 허용하고 `git diff-index`는 맞지 않게 하는 규칙은? ① `Bash(git diff*)` ② `Bash(git diff *)` ③ `Bash(git*)` ④ `Bash(*)`
+3. **C-3.** 사용자가 `/deploy`로 부를 때만 실행되고 Claude가 알아서 실행하지 않는 스킬을 만들려면 머리말에? ① `user-invocable: false` ② `disable-model-invocation: true` ③ `allowed-tools: none` ④ `model: haiku`
+4. **C-4.** `claude -p` 결과를 스크립트에서 파싱하려면? ① `--output-format json` ② `--verbose` ③ `--continue` ④ `--bare`만 쓰기
+5. **C-5.** Claude가 Bash `rm`으로 지운 파일을 되돌리는 가장 믿을 만한 방법은? ① `/rewind` ② `/compact` ③ git에 미리 커밋해 둔 상태에서 복구 ④ `/clear`
 
 - **4문제 이상**: 통과. 4번으로.
 - **3문제 이하**: 틀린 주제를 짚고 5번으로 간다(중급 과정, 필요하면 해당 레슨만 복습).

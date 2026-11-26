@@ -67,12 +67,17 @@ skills/
     references/quiz-answers.md   퀴즈 정답표 (채점할 때만 읽음)
     references/facts.md          공식 문서로 확인한 사실 정리 (2026-11 기준)
     references/gating.md         수준 확인 절차 (중급·고급)
-dist/                            업로드용 .zip 파일
+dist/                            업로드용 .zip 파일 (라이선스 파일 포함)
+LICENSE, LICENSE-CC-BY-4.0, NOTICE  라이선스 (코드 MIT, 내용 CC BY 4.0)
 ```
 
 스킬을 고친 뒤에는 `skills/<이름>/` 폴더를 다시 압축해서 `dist/`의 파일을 바꿔 주세요. ZIP 안에는 스킬 폴더가 맨 위에 있어야 해요(예: `cc-basics-app/SKILL.md`).
 
 ## 업데이트 내역
+
+### 2026-11-26: 이중 라이선스 (코드 MIT, 내용 CC BY 4.0)
+- 코드는 계속 MIT이고, 튜터 내용은 이제 CC BY 4.0입니다. 아래 [라이선스](#라이선스)와 [`NOTICE`](NOTICE)를 보세요.
+- `dist/`의 모든 `.zip`에 `LICENSE`, `LICENSE-CC-BY-4.0`, `NOTICE`가 들어가고, 각 `SKILL.md`에 `license` 항목이 생겼습니다. 이미 추가한 스킬은 그대로 써도 되고, 라이선스 파일까지 받고 싶을 때만 새 `.zip`을 올리면 됩니다.
 
 ### 2026-11-25: 이름에서 `-ko` 제거 (다시 올리기 필요)
 - 스킬 이름을 바꿨습니다: `cc-basics-ko-app` → `cc-basics-app`, `cc-intermediate-ko-app` → `cc-intermediate-app`, `cc-advanced-ko-app` → `cc-advanced-app`. 학습자가 쓰는 언어로 답하는 것은 그대로입니다.
@@ -111,4 +116,8 @@ dist/                            업로드용 .zip 파일
 
 ## 라이선스
 
-MIT 라이선스입니다. [`LICENSE`](LICENSE)를 보세요.
+이 프로젝트는 라이선스 두 개를 씁니다.
+- **코드**: 셸 스크립트(`*.sh`)와 JSON·YAML 설정 파일은 [MIT 라이선스](LICENSE)입니다. 레슨 안의 코드 예시도 MIT로 쓸 수 있습니다.
+- **내용**: `SKILL.md`, 참고 파일(레슨, 사실, 퀴즈, 정답표), 평가(evals), README, 유지보수 문서, 이미지는 [크리에이티브 커먼즈 저작자표시 4.0(CC BY 4.0)](LICENSE-CC-BY-4.0)입니다.
+
+내용을 다시 쓸 때는 이렇게 출처를 밝혀 주세요: `guide-protocol by sanh09 (https://github.com/sanh09/guide-protocol), CC BY 4.0`. 자세한 범위와 Anthropic 상표 안내는 [`NOTICE`](NOTICE)에 있습니다. `dist/`의 `.zip` 파일에도 세 파일이 모두 들어 있습니다.

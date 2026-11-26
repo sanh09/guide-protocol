@@ -1,0 +1,53 @@
+guide-protocol
+Copyright (c) 2026 sanh09
+https://github.com/sanh09/guide-protocol
+
+This project uses two licenses.
+
+1. Code: MIT License (see LICENSE)
+   - Shell scripts (*.sh)
+   - JSON and YAML configuration files (*.json, *.yaml, *.yml)
+   - Code examples inside the tutorial text, such as commands and
+     configuration snippets, may also be used under the MIT License.
+
+2. Content: Creative Commons Attribution 4.0 International, CC BY 4.0
+   (see LICENSE-CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/)
+   - Everything else: SKILL.md files, references (lessons, facts,
+     quizzes, answer keys), evals, README files, maintenance documents,
+     and images.
+
+How to give credit when you reuse the content (CC BY 4.0):
+   "guide-protocol by sanh09 (https://github.com/sanh09/guide-protocol), CC BY 4.0"
+   If you changed it, say so, for example: "Adapted from ...".
+
+Third-party material:
+   This is an independent project. It is not made, endorsed or supported
+   by Anthropic. "Claude", "Claude Code" and related names are trademarks
+   of Anthropic, used here only to name the products the tutors teach.
+   The tutors describe those products in their own words; Anthropic's own
+   documentation and changelog are not covered by these licenses.
+
+------------------------------------------------------------------------
+
+이 프로젝트는 라이선스 두 개를 씁니다.
+
+1. 코드: MIT 라이선스 (LICENSE 파일)
+   - 셸 스크립트(*.sh)
+   - JSON·YAML 설정 파일(*.json, *.yaml, *.yml)
+   - 교재 안의 코드 예시(명령어, 설정 예시 등)도 MIT 라이선스로 쓸 수 있습니다.
+
+2. 내용: 크리에이티브 커먼즈 저작자표시 4.0 국제, CC BY 4.0
+   (LICENSE-CC-BY-4.0 파일, https://creativecommons.org/licenses/by/4.0/deed.ko)
+   - 그 밖의 모든 것: SKILL.md, 참고 파일(레슨, 사실, 퀴즈, 정답표),
+     평가(evals), README, 유지보수 문서, 이미지.
+
+내용을 다시 쓸 때 출처 표시 (CC BY 4.0):
+   "guide-protocol by sanh09 (https://github.com/sanh09/guide-protocol), CC BY 4.0"
+   고쳐서 쓰면 고쳤다고 밝혀 주세요. 예: "... 을 바탕으로 수정".
+
+제3자 자료:
+   이 프로젝트는 개인 프로젝트이며 Anthropic이 만들거나 보증·지원하지
+   않습니다. "Claude", "Claude Code" 등은 Anthropic의 상표이며, 튜터가
+   가르치는 제품을 가리키는 데에만 씁니다. 튜터는 제품을 자기 말로
+   설명하며, Anthropic의 공식 문서와 변경 내역은 이 라이선스에 포함되지
+   않습니다.

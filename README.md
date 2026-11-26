@@ -66,12 +66,17 @@ skills/
     references/quiz-answers.md   quiz answer key (read only when grading)
     references/facts.md          facts checked against the official docs (as of 2026-11)
     references/gating.md         level check (Intermediate, Advanced)
-dist/                            .zip files for upload
+dist/                            .zip files for upload (each includes the license files)
+LICENSE, LICENSE-CC-BY-4.0, NOTICE  licenses (code MIT, content CC BY 4.0)
 ```
 
 After editing a skill, rebuild its archive in `dist/` with `bash scripts/build-dist.sh`. The skill folder must be at the top of the ZIP (for example `cc-basics-app/SKILL.md`).
 
 ## Release notes
+
+### 2026-11-26: Dual license (code MIT, content CC BY 4.0)
+- Code stays under MIT; the tutor content is now under CC BY 4.0. See [License](#license) and [`NOTICE`](NOTICE).
+- Every `.zip` in `dist/` now includes `LICENSE`, `LICENSE-CC-BY-4.0` and `NOTICE`, and each `SKILL.md` has a `license` field. A skill you already added keeps working; upload the new `.zip` only if you want the license files with it.
 
 ### 2026-11-25: `-ko` dropped from the names (action needed)
 - The skills are renamed: `cc-basics-ko-app` → `cc-basics-app`, `cc-intermediate-ko-app` → `cc-intermediate-app`, `cc-advanced-ko-app` → `cc-advanced-app`. The tutors still reply in the learner's language.
@@ -110,4 +115,8 @@ Rebuild the `dist/` files with `bash scripts/build-dist.sh`. The update procedur
 
 ## License
 
-MIT. See [`LICENSE`](LICENSE).
+This project uses two licenses:
+- **Code** — shell scripts (`*.sh`) and JSON/YAML configuration files — is under the [MIT License](LICENSE). Code examples inside the lessons may also be used under MIT.
+- **Content** — `SKILL.md`, the reference files (lessons, facts, quizzes, answer keys), evals, READMEs, maintenance documents and images — is under [Creative Commons Attribution 4.0 (CC BY 4.0)](LICENSE-CC-BY-4.0).
+
+When you reuse the content, credit it like this: `guide-protocol by sanh09 (https://github.com/sanh09/guide-protocol), CC BY 4.0`. [`NOTICE`](NOTICE) has the details and the note on Anthropic trademarks. Every `.zip` in `dist/` includes all three files.

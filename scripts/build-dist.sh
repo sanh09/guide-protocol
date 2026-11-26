@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # dist/ 의 업로드용 zip 파일을 다시 만든다. 저장소 루트에서 실행: bash scripts/build-dist.sh
-# 모든 zip에 라이선스 파일(LICENSE, LICENSE-CC-BY-4.0, NOTICE)을 넣는다.
+# 모든 zip에 라이선스 파일(LICENSE, LICENSE-CC-BY-4.0.txt, NOTICE.txt)을 넣는다.
 # 폴더에 그 파일이 없으면 저장소 맨 위의 파일을 넣는다.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 root="$(pwd)"
-license_files=(LICENSE LICENSE-CC-BY-4.0 NOTICE)
+license_files=(LICENSE LICENSE-CC-BY-4.0.txt NOTICE.txt)
 for f in "${license_files[@]}"; do
   [ -f "$f" ] || { echo "오류: 저장소 맨 위에 $f 가 없습니다" >&2; exit 1; }
 done

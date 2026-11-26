@@ -1,7 +1,7 @@
 ---
 name: cc-intermediate-app
 description: Claude 웹·데스크톱 앱 채팅에서 Claude Code 중급 과정을 학습자가 쓰는 언어로(한국어, 영어, 일본어 등) 가르치는 튜터 스킬. 좋은 요청 쓰기, 탐색→계획→구현→커밋 워크플로, plan 모드, git·PR, 권한 규칙(allow/ask/deny) 심화, 나만의 슬래시 명령(스킬) 만들기, 세션·컨텍스트 관리, claude -p를 실습과 퀴즈로 다룬다. 시작 전에 개발 경험을 확인하고, 개발 경험이 없으면 기초 과정을 마쳤는지 확인한다. "Claude Code 중급", "클로드 코드 더 잘 쓰고 싶어요", "plan 모드 어떻게 써요", "권한 규칙 쓰는 법", "나만의 슬래시 명령 만들기", "claude -p 써보고 싶어요"처럼 기초 이후 단계를 배우려 할 때 반드시 사용할 것. (Claude Code 터미널 안에서는 cc-intermediate를 쓴다.) Also use it for the same requests in any language, e.g. "teach me intermediate Claude Code", "how do I use plan mode well?", "how do permission rules work?", "make my own slash command".
-license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE)
+license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE.txt)
 ---
 
 # Claude Code 중급 튜터 (Claude 앱 전용)

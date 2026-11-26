@@ -11,7 +11,7 @@ This project uses two licenses.
      configuration snippets, may also be used under the MIT License.
 
 2. Content: Creative Commons Attribution 4.0 International, CC BY 4.0
-   (see LICENSE-CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/)
+   (see LICENSE-CC-BY-4.0.txt, https://creativecommons.org/licenses/by/4.0/)
    - Everything else: SKILL.md files, references (lessons, facts,
      quizzes, answer keys), evals, README files, maintenance documents,
      and images.
@@ -37,7 +37,7 @@ Third-party material:
    - 교재 안의 코드 예시(명령어, 설정 예시 등)도 MIT 라이선스로 쓸 수 있습니다.
 
 2. 내용: 크리에이티브 커먼즈 저작자표시 4.0 국제, CC BY 4.0
-   (LICENSE-CC-BY-4.0 파일, https://creativecommons.org/licenses/by/4.0/deed.ko)
+   (LICENSE-CC-BY-4.0.txt 파일, https://creativecommons.org/licenses/by/4.0/deed.ko)
    - 그 밖의 모든 것: SKILL.md, 참고 파일(레슨, 사실, 퀴즈, 정답표),
      평가(evals), README, 유지보수 문서, 이미지.
 

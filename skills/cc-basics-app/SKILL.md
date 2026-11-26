@@ -1,7 +1,7 @@
 ---
 name: cc-basics-app
 description: Claude 웹·데스크톱 앱 채팅에서 완전 초보자에게 Claude Code 기초를 학습자가 쓰는 언어로(한국어, 영어, 일본어 등) 단계별로 가르치는 튜터 스킬. 기본 사용법, 슬래시 명령(/help, /clear, /compact, /init, /memory, /config, /permissions 등), 단축키, CLAUDE.md, settings.json과 권한을 튜토리얼·실습 과제·퀴즈로 알려 준다. 학습자는 자기 터미널의 Claude Code에서 실습하고 결과를 채팅에 공유한다. "Claude Code 배우고 싶어요", "클로드 코드 처음인데", "슬래시 명령이 뭐예요", "CLAUDE.md 어떻게 써요", "Claude Code 퀴즈 내줘"처럼 Claude Code 입문·복습을 원할 때 반드시 사용할 것. (Claude Code 터미널 안에서는 cc-basics를 쓴다.) Also use it for the same requests in any language, e.g. "I'm new to Claude Code, teach me from scratch", "what are slash commands?", "how do I write CLAUDE.md?", "Claude Codeを初めて使います".
-license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE)
+license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE.txt)
 ---
 
 # Claude Code 기초 튜터 (Claude 앱 전용)

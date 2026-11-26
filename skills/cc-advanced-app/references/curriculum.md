@@ -59,8 +59,8 @@ claude
 핵심 개념
 - MCP = AI와 외부 도구를 잇는 공개 표준. 서버를 추가하면 Claude가 그 시스템의 도구를 쓸 수 있다.
 - 원격: `claude mcp add --transport http notion https://mcp.notion.com/mcp`
-- 로컬: `claude mcp add --env AIRTABLE_API_KEY=YOUR_KEY --transport stdio airtable -- npx -y airtable-mcp-server`. `--` 뒤는 서버 실행 명령이다.
-- 범위: `local`(기본, 나만·이 프로젝트, `~/.claude.json`) / `project`(`.mcp.json`, 팀 공유) / `user`(나만·모든 프로젝트).
+- 로컬: `claude mcp add --env AIRTABLE_API_KEY=YOUR_API_KEY --transport stdio airtable -- npx -y airtable-mcp-server`. `--` 뒤는 서버 실행 명령이다.
+- 범위: `local`(기본, 나만·이 프로젝트, 홈 폴더의 Claude Code 사용자 설정 파일에 저장) / `project`(`.mcp.json`, 팀 공유) / `user`(나만·모든 프로젝트).
 - `.mcp.json`은 `${VAR}` 환경 변수 확장을 지원한다. 토큰은 여기에 직접 쓰지 않는다.
 - 상태 확인: 세션에서 `/mcp`(연결 상태, 도구 수, OAuth 로그인), 터미널에서 `claude mcp list`, `claude mcp get <이름>`, `claude mcp remove <이름>`.
 - `@서버:리소스`로 MCP 리소스를 참조할 수 있다. 예: `@github:repos/owner/repo/issues`

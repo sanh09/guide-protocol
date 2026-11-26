@@ -13,10 +13,10 @@
 출처: https://code.claude.com/docs/en/mcp.md
 - 원격 HTTP(권장): `claude mcp add --transport http <name> <url>`, 예 `claude mcp add --transport http notion https://mcp.notion.com/mcp`
 - 헤더: `--header "Authorization: Bearer YOUR_API_KEY"`
-- 로컬 stdio: `claude mcp add [options] <name> -- <command> [args...]`, 예 `claude mcp add --env AIRTABLE_API_KEY=YOUR_KEY --transport stdio airtable -- npx -y airtable-mcp-server`. `--`는 Claude 옵션과 서버 실행 명령을 구분한다.
+- 로컬 stdio: `claude mcp add [options] <name> -- <command> [args...]`, 예 `claude mcp add --env AIRTABLE_API_KEY=YOUR_API_KEY --transport stdio airtable -- npx -y airtable-mcp-server`. `--`는 Claude 옵션과 서버 실행 명령을 구분한다.
 - SSE는 사용 중단(deprecated).
 - 플래그: `-s/--scope`, `-e/--env`, `-t/--transport`, `-H/--header`
-- 범위: `local`(기본, `~/.claude.json`의 프로젝트 항목, 나만), `project`(`.mcp.json`, 버전 관리로 공유), `user`(`~/.claude.json`, 모든 프로젝트).
+- 범위: `local`(기본, 홈 폴더의 Claude Code 사용자 설정 파일 안 프로젝트 항목, 나만), `project`(`.mcp.json`, 버전 관리로 공유), `user`(같은 사용자 설정 파일, 모든 프로젝트).
 - 같은 서버가 여러 곳에 정의되면 local > project > user > 플러그인 > claude.ai 커넥터 순으로 우선하며, 값은 합쳐지지 않는다.
 - `.mcp.json` 형식: `{"mcpServers": {"shared-server": {"type": "http", "url": "https://example.com/mcp"}}}`. `${VAR}`, `${VAR:-default}` 확장을 지원한다.
 - `.mcp.json` 서버는 대화형 세션에서 사용 전 승인을 묻는다. 선택 초기화는 `claude mcp reset-project-choices`.

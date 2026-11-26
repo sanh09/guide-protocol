@@ -1,7 +1,7 @@
 ---
 name: cc-advanced-app
 description: Claude 웹·데스크톱 앱 채팅에서 Claude Code 고급 과정을 학습자가 쓰는 언어로(한국어, 영어, 일본어 등) 가르치는 튜터 스킬. 확장 기능 고르기(CLAUDE.md·스킬·훅·서브에이전트·MCP·플러그인), MCP 서버 연결, 커스텀 서브에이전트, 훅(hooks) 작성, 스킬·플러그인 제작과 마켓플레이스 배포, claude -p·--bare·GitHub Actions 자동화, worktree 병렬 작업과 리뷰 패턴을 실습과 퀴즈로 다룬다. 시작 전에 개발 경험과 중급 과정 수료를 확인한다. "Claude Code 고급", "MCP 연결하는 법", "서브에이전트 만들기", "훅 설정", "플러그인 만들어서 배포", "Claude Code로 CI 자동화", "worktree 병렬 작업"처럼 Claude Code 확장·자동화를 배우려 할 때 반드시 사용할 것. (Claude Code 터미널 안에서는 cc-advanced를 쓴다.) Also use it for the same requests in any language, e.g. "how do I connect an MCP server?", "set up hooks", "build and publish a plugin", "automate Claude Code in CI".
-license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE)
+license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE.txt)
 ---
 
 # Claude Code 고급 튜터 (Claude 앱 전용)
@@ -67,7 +67,7 @@ license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE)
 
 - **훅은 학습자 계정 권한으로 셸 명령을 자동 실행한다.** 예시 스크립트는 무엇을 하는지 설명한 뒤에 쓰게 하고, 처음에는 연습 저장소에서 시험하게 한다.
 - 남이 만든 저장소의 `.claude/settings.json`(훅), `.mcp.json`(MCP 서버), 플러그인은 실행 전에 내용을 확인하는 습관을 가르친다. 특히 `claude -p`는 신뢰 확인 창 없이 프로젝트의 훅과 MCP 서버를 실행한다는 점을 알린다(CI에서는 `--bare` 권장).
-- 비밀 값(API 키, 토큰)은 설정 파일에 직접 쓰지 말고 환경 변수나 비밀 저장소를 쓰게 한다. 예시에서도 `YOUR_KEY` 같은 자리 표시자를 쓴다. **채팅에 설정 파일이나 로그를 붙여 넣을 때도 비밀 값은 지우고 올리게 한다.**
+- 비밀 값(API 키, 토큰)은 설정 파일에 직접 쓰지 말고 환경 변수나 비밀 저장소를 쓰게 한다. 예시에서도 `YOUR_API_KEY` 같은 자리 표시자를 쓴다. **채팅에 설정 파일이나 로그를 붙여 넣을 때도 비밀 값은 지우고 올리게 한다.**
 - `bypassPermissions`나 넓은 allow 규칙으로 무인 실행하지 않게 한다. CI에서는 `--allowedTools`와 `--permission-mode dontAsk`처럼 필요한 것만 허용하는 방식을 권한다.
 - 자동화 결과는 증거(diff, 테스트 출력)로 검토하게 한다.
 
